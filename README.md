@@ -16,15 +16,15 @@ Download one of the layouts below. The zip includes the game folders shown in th
 
 | Map layout | Player models and first-person arms |
 | --- | --- |
-| [With Misty (Normal)](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/download/v3.0/T5-AC-With-Misty-Normal.zip) | Classic Misty for the roster, with static arms and hands |
-| [With Misty (Goth)](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/download/v3.0/vT5-AC-With-Misty-Goth.zip) | Misty with static skull-pattern sleeves and gloves |
-| [Without Misty](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/download/v3.0/T5-AC-Without-Misty.zip) | Stock player models with an animated camo on the original arms and gloves |
+| [With Misty (Normal)](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/latest/download/T5-AC-With-Misty-Normal.zip) | Classic Misty for the roster, with static arms and hands |
+| [With Misty (Goth)](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/latest/download/vT5-AC-With-Misty-Goth.zip) | Misty with static skull-pattern sleeves and gloves |
+| [Without Misty](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/latest/download/T5-AC-Without-Misty.zip) | Stock player models with an animated camo on the original arms and gloves |
 
 All three map layouts have RGB eye effects for living zombies and animated gun models on purchased wall buys. The front-end TVs use the same animated lightning camo as the M14.
 
 ### Optional FOV sliders
 
-[Download FOV Options](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/download/v3.0/T5-AC-FOV-Options.zip). This adds FOV (55-130) and FOV Scale (0.8-2.0) in **Settings > Game** on Steam PC.
+[Download FOV Options](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/latest/download/T5-AC-FOV-Options.zip). This adds FOV (55-130) and FOV Scale (0.8-2.0) in **Settings > Game** on Steam PC.
 
 Close Black Ops, extract the ZIP, and open PowerShell in the extracted folder. With Python 3.11 or later installed, set `$game` to your install folder and run:
 
@@ -37,7 +37,7 @@ The installer backs up the affected game files. Use `restore` in place of `insta
 
 ### Optional Texture Options (Steam PC)
 
-[Download Texture Options](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/download/v3.0/T5-AC-Texture-Options.zip) for the FOV sliders and texture switches in **Settings > Game**. **Animated Textures** turns the whole camo pack off, including the Misty swaps. The four switches below it restore their own stock visuals while the pack stays on.
+[Download Texture Options](https://github.com/Geekmaxxer/T5-Animated-Camos/releases/latest/download/T5-AC-Texture-Options.zip) for the FOV sliders and texture switches in **Settings > Game**. **Animated Textures** turns the whole camo pack off, including the Misty swaps. The four switches below it restore their own stock visuals while the pack stays on.
 
 Texture Options includes both FOV sliders. Start with the stock Steam game files and let `setup` install your chosen camo layout too. Close Black Ops, extract Texture Options, and open PowerShell in the extracted folder with Python 3.11 or later installed. Change the paths and choose `normal`, `goth` or `stock` to match your camo ZIP.
 
