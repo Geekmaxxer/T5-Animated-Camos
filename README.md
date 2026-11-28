@@ -33,7 +33,7 @@ $game = 'C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops'
 py -3 .\menu_patch.py install $game
 ```
 
-The installer backs up the original `code_post_gfx.ff` for you. Use `restore` in place of `install` to put it back. FOV changes apply during play. Check your values after restarting or changing maps.
+The installer backs up the affected game files. Use `restore` in place of `install` to put them back. FOV changes apply during play. The Kino and Der Riese teleporter effects return to the FOV you had before teleporting.
 
 ### Optional Texture Options (Steam PC)
 

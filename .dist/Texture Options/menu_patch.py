@@ -4,6 +4,7 @@ import argparse
 import csv
 import hashlib
 import io
+import json
 import os
 from pathlib import Path
 import struct
@@ -13,6 +14,7 @@ import zlib
 
 
 MAGIC = b"ACMENU30"
+BODY_MAGIC = b"ACBODY30"
 FASTFILE_HEADER = b"IWffu100\xd9\x01\x00\x00"
 CHUNK = 64
 MAX_PAYLOAD = 64 * 1024 * 1024
@@ -30,7 +32,7 @@ def payload(data):
     return body
 
 
-def create_delta(original, modified):
+def create_delta(original, modified, *, match_payload=False):
     old, new = map(payload, (original, modified))
     index = {old[pos:pos + CHUNK]: pos for pos in range(0, len(old) - CHUNK + 1, CHUNK)}
     operations = io.BytesIO()
@@ -54,17 +56,19 @@ def create_delta(original, modified):
     if pending < len(new):
         operations.write(OPERATION.pack(0, len(new) - pending))
         operations.write(new[pending:])
-    metadata = METADATA.pack(MAGIC, hashlib.sha256(original).digest(), hashlib.sha256(new).digest(), len(new))
+    source = old if match_payload else original
+    magic = BODY_MAGIC if match_payload else MAGIC
+    metadata = METADATA.pack(magic, hashlib.sha256(source).digest(), hashlib.sha256(new).digest(), len(new))
     return metadata + zlib.compress(operations.getvalue(), level=9)
 
 
 def apply_delta(original, delta):
     magic, expected_source, expected_body, size = METADATA.unpack_from(delta)
-    if magic != MAGIC or not 0 < size <= MAX_PAYLOAD:
-        raise ValueError("invalid Animated Camos menu patch")
-    if hashlib.sha256(original).digest() != expected_source:
-        raise ValueError("this patch needs the matching untouched Steam code_post_gfx.ff")
+    if magic not in (MAGIC, BODY_MAGIC) or not 0 < size <= MAX_PAYLOAD:
+        raise ValueError("invalid Animated Camos fastfile patch")
     old = payload(original)
+    if hashlib.sha256(old if magic == BODY_MAGIC else original).digest() != expected_source:
+        raise ValueError("this patch needs the matching source fastfile")
     decoder = zlib.decompressobj()
     operations = io.BytesIO(decoder.decompress(delta[METADATA.size:], 2 * MAX_PAYLOAD))
     if not decoder.eof or decoder.unused_data:
@@ -87,6 +91,15 @@ def apply_delta(original, delta):
     if len(rebuilt) != size or hashlib.sha256(rebuilt).digest() != expected_body:
         raise ValueError("the reconstructed menu could not be verified")
     return FASTFILE_HEADER + zlib.compress(rebuilt)
+
+
+def fov_maps():
+    manifest = Path(__file__).with_name("fov-maps.json")
+    return json.loads(manifest.read_bytes()) if manifest.is_file() else {}
+
+
+def payload_hash(data):
+    return hashlib.sha256(payload(data)).hexdigest()
 
 
 def check_game_closed():
@@ -122,22 +135,54 @@ def manage_fov(game, restore):
         raise ValueError("Select your Black Ops installation folder.")
     check_game_closed()
     current = zone.read_bytes()
-    has_backup = backup.exists()
-    original = backup.read_bytes() if has_backup else current
+    original = backup.read_bytes() if backup.is_file() else current
     delta = (folder / "game-options.acpatch").read_bytes()
     patched = apply_delta(original, delta)
-    if current != original and payload(current) != payload(patched):
-        raise ValueError("The installed menu was changed by another patch. Restore it before using FOV Options.")
-    if restore and not has_backup:
+    if restore and not backup.is_file():
         raise ValueError(f"No FOV Options backup was found at {backup}")
-    if not restore and not has_backup:
-        write_zone(backup, original, backup=True)
+    changes = [(zone, backup, current, original, patched)]
+    for name, recipes in fov_maps().items():
+        target = zone.parent / name
+        saved = target.with_suffix(".ff.acbackup")
+        if not target.is_file() or (restore and not saved.is_file()):
+            continue
+        current = target.read_bytes()
+        original = saved.read_bytes() if saved.is_file() else current
+        recipe = recipes.get(payload_hash(original))
+        if recipe is None:
+            if saved.is_file():
+                raise ValueError(f"The FOV Options backup for {name} has an unexpected payload.")
+            print(f"Skipped the teleporter fix for {name}. This build of the map is unsupported.")
+            continue
+        delta = (folder / recipe["path"]).read_bytes()
+        if hashlib.sha256(delta).hexdigest() != recipe["sha256"]:
+            raise ValueError(f"The teleporter patch for {name} failed its checksum.")
+        patched = apply_delta(original, delta)
+        changes.append((target, saved, current, original, patched))
+
+    for target, _, current, original, patched in changes:
+        if current != original and payload_hash(current) != payload_hash(patched):
+            raise ValueError(f"{target.name} was changed by another patch. Restore it before using FOV Options.")
+    if not restore:
+        for _, saved, _, original, _ in changes:
+            if not saved.is_file():
+                write_zone(saved, original, backup=True)
     check_game_closed()
-    if zone.read_bytes() != current:
-        raise ValueError("The installed menu changed while preparing the patch.")
-    write_zone(zone, original if restore else patched)
-    print("Restored the stock Game Options menu." if restore else
-          f"FOV Options installed. Original menu backed up to {backup}.")
+    written = []
+    try:
+        for target, _, current, original, patched in changes:
+            if target.read_bytes() != current:
+                raise ValueError(f"{target.name} changed while preparing the patch.")
+            replacement = original if restore else patched
+            if current != replacement:
+                write_zone(target, replacement)
+                written.append((target, current))
+    except (OSError, ValueError):
+        for target, current in reversed(written):
+            write_zone(target, current)
+        raise
+    print("Restored the original FOV Options files." if restore else
+          f"FOV Options installed and original files backed up in {zone.parent}.")
 
 
 def main():

@@ -276,7 +276,7 @@ def map_sources(layout, moon_fix):
 def map_variant(store, source, recipe):
     delta = Path(__file__).parent / recipe["path"]
     if sha(delta) != recipe["sha256"]:
-        raise ValueError(f"the stock prop patch differs from its checksum: {delta}")
+        raise ValueError(f"the map patch differs from its checksum: {delta}")
     cache = store / "variants" / recipe["sha256"]
     if not cache.is_file():
         write_atomic(cache, menu_patch.apply_delta(source.read_bytes(), delta.read_bytes()))
@@ -285,30 +285,44 @@ def map_variant(store, source, recipe):
     return cache
 
 
+def profile_recipes(layout, name, source):
+    previous = layout.get("previous_profiles", {}).get(name)
+    if previous and sha(source) == previous["source_sha256"]:
+        return previous["profiles"]
+    return layout["profiles"][name]
+
+
 def prepare_variants(bundle, state, store):
     layout = bundle["layouts"][state["layout"]]
     for _, source in map_sources(layout, state["moon_fix"]):
-        for recipe in layout["profiles"][source].values():
-            map_variant(store, store / "release" / source, recipe)
+        base = store / "release" / source
+        for recipe in profile_recipes(layout, source, base).values():
+            map_variant(store, base, recipe)
 
 
 def selected_targets(bundle, state, store, preferences):
     target = {name: store / "stock" / name if digest else None for name, digest in state["stock"].items()}
     target[MENU] = store / "options" / "code_post_gfx.ff"
-    if not preferences["master"]:
-        return target
-
-    layout = bundle["layouts"][state["layout"]]
-    release = store / "release"
-    target.update({name: release / name for name in (IWD, *AUXILIARIES)})
-    if preferences["tvs"]:
-        target[TV] = release / TV
-    for name, source in map_sources(layout, state["moon_fix"]):
-        groups = layout["profiles"][source]
-        disabled = "+".join(group for group in ("box", "george", "traps")
-                            if group in groups and not preferences[group])
-        base = release / source
-        target[name] = map_variant(store, base, groups[disabled]) if disabled else base
+    if preferences["master"]:
+        layout = bundle["layouts"][state["layout"]]
+        release = store / "release"
+        target.update({name: release / name for name in (IWD, *AUXILIARIES)})
+        if preferences["tvs"]:
+            target[TV] = release / TV
+        for name, source in map_sources(layout, state["moon_fix"]):
+            base = release / source
+            groups = profile_recipes(layout, source, base)
+            disabled = "+".join(group for group in ("box", "george", "traps")
+                                if group in groups and not preferences[group])
+            target[name] = map_variant(store, base, groups[disabled]) if disabled else base
+    for name, recipes in menu_patch.fov_maps().items():
+        key = f"zone/Common/{name}"
+        source = target[key]
+        if source is not None:
+            recipe = recipes.get(menu_patch.payload_hash(source.read_bytes()))
+            if recipe is None:
+                raise ValueError(f"The teleporter fix has no matching fastfile for {name}.")
+            target[key] = map_variant(store, source, recipe)
     return target
 
 
@@ -357,6 +371,13 @@ def register_monitor(game, store, bundle, config):
     files = {"texture_options.py", "menu_patch.py", "texture-options.json", "game-options.acpatch"}
     files.update(recipe["path"] for layout in bundle["layouts"].values() for groups in layout["profiles"].values()
                  for recipe in groups.values())
+    files.update(recipe["path"] for layout in bundle["layouts"].values()
+                 for previous in layout.get("previous_profiles", {}).values()
+                 for recipe in previous["profiles"].values())
+    fov_maps = menu_patch.fov_maps()
+    if fov_maps:
+        files.add("fov-maps.json")
+        files.update(recipe["path"] for recipes in fov_maps.values() for recipe in recipes.values())
     for name in files:
         replace(source / name, helper / name)
     python = Path(sys.executable).with_name("pythonw.exe").resolve(strict=True)

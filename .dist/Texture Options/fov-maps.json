@@ -1,0 +1,256 @@
+{
+  "zombie_theater_patch.ff": {
+    "e4873ac84df0ec32b47fe6a60c9327353f60bd60f2d90db250e92cfeafb046e9": {
+      "path": "fov-maps/zombie_theater_patch/e4873ac84df0ec32b47fe6a60c9327353f60bd60f2d90db250e92cfeafb046e9.acpatch",
+      "sha256": "bc5d206cbe3b09db7bf76d9d73960c2b15377231b49deccdf04dfe15444a2e11",
+      "body_sha256": "8afe550bb668c5276745812ec763ef18c4dfe94190f50a6d4314bc3dd0cf5812"
+    },
+    "a2e3581022886eaacaa1a96bb652d2460b866cbdac88b2040d08e45757566006": {
+      "path": "fov-maps/zombie_theater_patch/a2e3581022886eaacaa1a96bb652d2460b866cbdac88b2040d08e45757566006.acpatch",
+      "sha256": "1d0bfb698d5464d1546d8efb342e0f1af2f35f3d56ef22010483484e0def6677",
+      "body_sha256": "2b99d3397242f5ba1bda3b386765394a17c78ea4fbc378b6c29b6e413a8850e4"
+    },
+    "5393c462396966bfc838ed2bf88fe576d910816cc1402ab6d1f16b6ebb282b6b": {
+      "path": "fov-maps/zombie_theater_patch/5393c462396966bfc838ed2bf88fe576d910816cc1402ab6d1f16b6ebb282b6b.acpatch",
+      "sha256": "777e3d3251239b6db0dcc388b3fe8d38349b749026b178dfc43f97115031f238",
+      "body_sha256": "788bc6d8d9146cb7dc3e04cb2e50efaf437e7d27fdfdfb735188a76cc156322c"
+    },
+    "990697ddc54b0923face8d9a61faaec2edfaccb6c67fcc0fed3891f23769168e": {
+      "path": "fov-maps/zombie_theater_patch/990697ddc54b0923face8d9a61faaec2edfaccb6c67fcc0fed3891f23769168e.acpatch",
+      "sha256": "5a48fa5a3d6e93bf344a0f22547897ce61d4916ffd1595843f4e544341dd1994",
+      "body_sha256": "f806b50df1da9828beec5e6f01a3ac0b7393f8e9a797a513a6733b9d90218f72"
+    },
+    "1bd8b8af0acd702821c7da3c546766d7b9d8457a5dc7a52f3c5efaee2b137acd": {
+      "path": "fov-maps/zombie_theater_patch/1bd8b8af0acd702821c7da3c546766d7b9d8457a5dc7a52f3c5efaee2b137acd.acpatch",
+      "sha256": "7a0ffa67a7530b67fd3cac237d43e0a2e99490b1398460cef71edf2b4cbd8bec",
+      "body_sha256": "6afcee976ff40f9f470ddd7d4d803520879f23f5d2d956716c8d908a08c8e4d1"
+    },
+    "c0e63ec52d938362c6346daba8aa1f985c0d2de519ef3dc37140cd059b40bbed": {
+      "path": "fov-maps/zombie_theater_patch/c0e63ec52d938362c6346daba8aa1f985c0d2de519ef3dc37140cd059b40bbed.acpatch",
+      "sha256": "073abfc4e7fd5ab3f1ca8a4ddf69a7d56cd4c3941b1a630c58c87ce674ac5373",
+      "body_sha256": "6bcb82deb7091c48efe7d56c3ac17f42ad8c4dd0911592758ae6a684691ea2ef"
+    },
+    "d5e0c030b1f772b228b3213865b3cdae5805442df7ed627951c39650e51e608f": {
+      "path": "fov-maps/zombie_theater_patch/d5e0c030b1f772b228b3213865b3cdae5805442df7ed627951c39650e51e608f.acpatch",
+      "sha256": "9d5b31b65216e88643ce619164e812d245709c85805a92ef751f175893112e35",
+      "body_sha256": "04ab7e60993770bc1518e70076ce39bfe6812204319fb959b6c8b026f4bea50e"
+    },
+    "f0530b7c21c7f738cedc4d99c4a26a746e7cab7a6c42357b7d5af3298e644736": {
+      "path": "fov-maps/zombie_theater_patch/f0530b7c21c7f738cedc4d99c4a26a746e7cab7a6c42357b7d5af3298e644736.acpatch",
+      "sha256": "16309dacf1c1e460914afac55ae6e6dd926069ef5c35757edb580bb0ab79f5a4",
+      "body_sha256": "0f8e21d383cbce180148da54d87f4417848215c007577dff2b661a3a00180e62"
+    },
+    "4e5c9ef3e04bf78feb5601298c55d4e269af7ea11c082d10268b0b35d3014c3c": {
+      "path": "fov-maps/zombie_theater_patch/4e5c9ef3e04bf78feb5601298c55d4e269af7ea11c082d10268b0b35d3014c3c.acpatch",
+      "sha256": "e92bc46be1d95aeed0815d94275b668b12c83f06d63c73116a1ee39c42c76860",
+      "body_sha256": "32a90739ec576e66ad1ecd019e5587aad1d09bca87a7e66bf6eb30b73ec77977"
+    },
+    "2e6c7118afacc2881f05f39453eb21d1d8fab797d3711ab828ffea797ca6cb6f": {
+      "path": "fov-maps/zombie_theater_patch/2e6c7118afacc2881f05f39453eb21d1d8fab797d3711ab828ffea797ca6cb6f.acpatch",
+      "sha256": "b0ded7350190c1563e8d12df8065f293fc0585f1fb97636533c76f8c7165f89a",
+      "body_sha256": "043eac329f7fdb37f7a62e6d9314e1d199f14d35658d9ec11cc972786164e046"
+    },
+    "3fec40ec763ea66f3332b3ef5c9cd79c6f8d2301780344d66ea8ba312ca62b1a": {
+      "path": "fov-maps/zombie_theater_patch/3fec40ec763ea66f3332b3ef5c9cd79c6f8d2301780344d66ea8ba312ca62b1a.acpatch",
+      "sha256": "4176a0ceac50340c9ac2469a82cc422d496a98fac6a64b9d9f68fa24b5f848ae",
+      "body_sha256": "546ea46ee3deea759559b3f45056e15d06d1fdda6c4a2f6ebd47a20a1c2a5dec"
+    },
+    "1a68fc6fc463139494b584d85052dbc0be20484467536ac9f1ae738042e10a28": {
+      "path": "fov-maps/zombie_theater_patch/1a68fc6fc463139494b584d85052dbc0be20484467536ac9f1ae738042e10a28.acpatch",
+      "sha256": "70cfa7a13df8dc6af6a460d8be2cd3847d3be95e6d30a66df1bf07f4a036a705",
+      "body_sha256": "1ab8e9fc30cbb4fdcfde7fdede6b6d0b7b4d6df690f00f7d96766fbde28b779d"
+    },
+    "aceb2925b390209d663e00664f3bba201364cac5c46531df38f7bef945fc3af8": {
+      "path": "fov-maps/zombie_theater_patch/aceb2925b390209d663e00664f3bba201364cac5c46531df38f7bef945fc3af8.acpatch",
+      "sha256": "a373b2fb33ad1240725d68f5bd207dc3ea7182f43596e4bf2cd6d10a7f4a3ba1",
+      "body_sha256": "49e2c64603095e1b5cb6dc1a139c448e79dc17d455973e18ea3df55ee9a83930"
+    },
+    "52cd61426aa453cf44c70b8f5ac3c8cf42132ad4db1795e9f2b971b0e167afc4": {
+      "path": "fov-maps/zombie_theater_patch/52cd61426aa453cf44c70b8f5ac3c8cf42132ad4db1795e9f2b971b0e167afc4.acpatch",
+      "sha256": "04a31e40cafaab3fe91ea3bd4e9f049d51267f2ee4a063a6989567cddfd2803c",
+      "body_sha256": "223030dbab1239f1f9c5bee51f3c6c9562417195a2d37d1a58a725cba7c22857"
+    },
+    "93facc9e7fab61ca593a4749aaa5192ee953cb545fd134c38f83e9c71aa6afb7": {
+      "path": "fov-maps/zombie_theater_patch/93facc9e7fab61ca593a4749aaa5192ee953cb545fd134c38f83e9c71aa6afb7.acpatch",
+      "sha256": "f69d644827a3b8f22c6bc702018bb41a7d3c5dbb407012b5799660a64ca54342",
+      "body_sha256": "dadb0a882ba2e08c9556d4c88a589e55833cab063cb091682ca82b5ee6eac153"
+    },
+    "ad8ba1dacf9d5b86be0ed640e6e9350baec6c30dfca072996291083e2d4ac0aa": {
+      "path": "fov-maps/zombie_theater_patch/ad8ba1dacf9d5b86be0ed640e6e9350baec6c30dfca072996291083e2d4ac0aa.acpatch",
+      "sha256": "f1acf4d852de169a9b13d73b365913847e82fcac91a6e9c40f42e49b28c77fe1",
+      "body_sha256": "dcc2036379d2eeb0e6a3eef48205ca79dd760a5a806490dfcafc50eb38d2051e"
+    },
+    "f57bde07e921a98acc0e747e1bdabe3a62f3cbc35fbe787152a23afda20b8432": {
+      "path": "fov-maps/zombie_theater_patch/f57bde07e921a98acc0e747e1bdabe3a62f3cbc35fbe787152a23afda20b8432.acpatch",
+      "sha256": "ca7480057c4c84d933f97800030aac5993ffec5630b2ed3fab96563f5e073b2a",
+      "body_sha256": "c103344f37c5c5fdfff53a3b5f785f742906c0dcd0e5e2e549933d86a060047c"
+    },
+    "4da373e6c267b8909456fd9113483e6a130f5c9a71672e53f520a24cda34e4aa": {
+      "path": "fov-maps/zombie_theater_patch/4da373e6c267b8909456fd9113483e6a130f5c9a71672e53f520a24cda34e4aa.acpatch",
+      "sha256": "663f5e21c339dafe662904aec83cd74f7eaf6e31a666042e043552b4d905e1d9",
+      "body_sha256": "582c165dcca092132c852cd064bed78258f59262ab884247753695eab2b64f55"
+    },
+    "17519d5a99820d8a8483c2a780a8ffff83edd87f733647c0c9c105ae7b12e51c": {
+      "path": "fov-maps/zombie_theater_patch/17519d5a99820d8a8483c2a780a8ffff83edd87f733647c0c9c105ae7b12e51c.acpatch",
+      "sha256": "2ab4e22c55725d483c5f9d326efdac07d1d508903d3e12d985d617ea2ca6c9cd",
+      "body_sha256": "339f8ab9e6598a8516d9c73f8a1f3555f2671b3a8aeb98c768291ef4b879407c"
+    },
+    "b49dea6ba12503290d56690b999416465beb6ea1c807642b472e9cf3c7579dc1": {
+      "path": "fov-maps/zombie_theater_patch/b49dea6ba12503290d56690b999416465beb6ea1c807642b472e9cf3c7579dc1.acpatch",
+      "sha256": "4ccc87d0b5b0b3f94d930629e81c09309466498ceb26624e69e55d9f643fb8dc",
+      "body_sha256": "8b9cfac16d769666834eb2c65060a37c1352a54647af22dc24e2ac291dfab7a5"
+    },
+    "367ad434ed02415ca66b1c03abba43c9d5906ca99db18a01f2a516157279f30f": {
+      "path": "fov-maps/zombie_theater_patch/367ad434ed02415ca66b1c03abba43c9d5906ca99db18a01f2a516157279f30f.acpatch",
+      "sha256": "7ba2e424ded7ba79efdb0c05d331ec1a5bdad06e4729eca6097fa72431e9fedb",
+      "body_sha256": "898a4f11762205c41c442d73896ff9d0c8284ae5b4081cf6925f6a5fa602649a"
+    },
+    "14cdf76483641b1a418b223d80dae10d7dafc78efb09b8fd5f111eac0a86a0ca": {
+      "path": "fov-maps/zombie_theater_patch/14cdf76483641b1a418b223d80dae10d7dafc78efb09b8fd5f111eac0a86a0ca.acpatch",
+      "sha256": "9d55bd7fdaeba37596cc1e77b63ae68d19bbfce23b7acca997b0b3f3e27ffb13",
+      "body_sha256": "8ab0a925a83992e896344ce1ff8e22eb7afab605c42115297e83d35af1ab6144"
+    },
+    "2e69dc34ed37a8f4ced76f1c7b0166ed3193a2091d7a505ba2dfb68a5d318f61": {
+      "path": "fov-maps/zombie_theater_patch/2e69dc34ed37a8f4ced76f1c7b0166ed3193a2091d7a505ba2dfb68a5d318f61.acpatch",
+      "sha256": "b0aedd1b9221368324a7b654d2fb82870557576ff9083abacb8f048d94eaaf4c",
+      "body_sha256": "223c4a1a3c7ae7fdbd625ec1af21a39838431c29a769297b8bc8834a26fdb571"
+    },
+    "d6457cfba795395a913a5d3c11347f1d999f3e2147cf96cfd0088939f04abeca": {
+      "path": "fov-maps/zombie_theater_patch/d6457cfba795395a913a5d3c11347f1d999f3e2147cf96cfd0088939f04abeca.acpatch",
+      "sha256": "8bf1609490767c63860ffcd6fba09483454ea8d3a4c8000b6032190d5bb5236f",
+      "body_sha256": "a5460ce58666c4953b7ef13da041eb42c2027b26b22fc95141a483a1ae9ddce0"
+    },
+    "0d7dd8db195ca9d6a3159a74aac6b6ec0d016c21b14a87003a00dcfce9240825": {
+      "path": "fov-maps/zombie_theater_patch/0d7dd8db195ca9d6a3159a74aac6b6ec0d016c21b14a87003a00dcfce9240825.acpatch",
+      "sha256": "0d7d327fe46a0d1dde95562e847fdd3c50ed2955d2d404fad395105f23f4a633",
+      "body_sha256": "518376ca42768a58899a742f9dd5646ac9f1694f408821fa21af617ca656058a"
+    }
+  },
+  "zombie_cod5_factory_patch.ff": {
+    "c0b7f0fdb2b48e102ec76f9e2aa4cee5b4036b1efd3b3307c95b9f57f2cf705c": {
+      "path": "fov-maps/zombie_cod5_factory_patch/c0b7f0fdb2b48e102ec76f9e2aa4cee5b4036b1efd3b3307c95b9f57f2cf705c.acpatch",
+      "sha256": "b4ecc92ad0848a112b8db17d1d4514041d7255ca17f0aa76f421b8c4b24caac3",
+      "body_sha256": "446a396417cd34c94dc2c3e4dd86ebf8f890b230389f1e37dc15b5e2c6a05488"
+    },
+    "fbcd8e1a5d62e5bcd7c073de4361d9f9416dc4ca9beb1cf6615d42ec7dcf8a0d": {
+      "path": "fov-maps/zombie_cod5_factory_patch/fbcd8e1a5d62e5bcd7c073de4361d9f9416dc4ca9beb1cf6615d42ec7dcf8a0d.acpatch",
+      "sha256": "932178b2ad4c018a3c27b4d7f1ea1aebefd664c0f7266d719c3a3dc5f3c1d0f5",
+      "body_sha256": "bce427797a7fd445a8e702e76ef92fbad0570464eb03e31e900d0a3726788ba0"
+    },
+    "6f7e98ee99cb89ad6c9464c411b2204a8fa5b8214c9749eced0b269d63db1dd2": {
+      "path": "fov-maps/zombie_cod5_factory_patch/6f7e98ee99cb89ad6c9464c411b2204a8fa5b8214c9749eced0b269d63db1dd2.acpatch",
+      "sha256": "a7576da6720a43c09321c567770445d6ff800ca256b9a3c974406344af195431",
+      "body_sha256": "1e8944a09b461adb12945eed579b1c1a8545c3a53c891cd811f54ae1b2483137"
+    },
+    "d4878ba839986929b0444892d03a4d4414408eb1d2f1534a79a417bd95546939": {
+      "path": "fov-maps/zombie_cod5_factory_patch/d4878ba839986929b0444892d03a4d4414408eb1d2f1534a79a417bd95546939.acpatch",
+      "sha256": "b9b4d12dca54b9d2fd02b7261781ae6a01b801eac948b5a1618fdc08df6240e1",
+      "body_sha256": "828dfa2dcbb3fd3d05e60afc0c8e759ca58c9b3119d36615876041c9b192841e"
+    },
+    "bf518b4f01b3b1da8e8e14f38f8a9b740dc6dbf97930c62d71e2a5c6c6c3059e": {
+      "path": "fov-maps/zombie_cod5_factory_patch/bf518b4f01b3b1da8e8e14f38f8a9b740dc6dbf97930c62d71e2a5c6c6c3059e.acpatch",
+      "sha256": "c8a156c49760588fc7f63c970630384f570c624de328f85973e012d1d2f1ea63",
+      "body_sha256": "77d441bd6229d4f1547cb87daeb7e3825a80917ac6b717da5a373445a73f3ef9"
+    },
+    "8866da5752e18ab2068927e46dd16bd231ccb3bc07fb92f492f09ca57726a8ff": {
+      "path": "fov-maps/zombie_cod5_factory_patch/8866da5752e18ab2068927e46dd16bd231ccb3bc07fb92f492f09ca57726a8ff.acpatch",
+      "sha256": "0da168c5880fc788db5d4481a1e20ba716e7e2b3b0f320a193c768439ac09d36",
+      "body_sha256": "f4b046f108b4948724a5f2688cc0f5643cb1120f06c5d4c9b6477e1df853628c"
+    },
+    "a586db32f2460091acc4ff30c145a22a674b5d6875fadca5ef2d963b5b3d4221": {
+      "path": "fov-maps/zombie_cod5_factory_patch/a586db32f2460091acc4ff30c145a22a674b5d6875fadca5ef2d963b5b3d4221.acpatch",
+      "sha256": "f7bcfdcfdc4a289f82e323fd7d5d5bc7d91df03599cf40b3a437ea56f0cd17cf",
+      "body_sha256": "feedd3bdf9037c6ebfbc8d3ec12265e2a3841256707cafff8a841bafcd3c9c50"
+    },
+    "d6dabcd9b4453648b3d8142e2ba889e2cee851dcf7a867a1be997666c820a09e": {
+      "path": "fov-maps/zombie_cod5_factory_patch/d6dabcd9b4453648b3d8142e2ba889e2cee851dcf7a867a1be997666c820a09e.acpatch",
+      "sha256": "4b9798c05165bdf35d9f3f77359b4d67e49d3f1188c11095554c1fc0d3b6d564",
+      "body_sha256": "946fc94645597bc4712dfa3686b747dd8f6b1a5730e9ae1447bca215855ee51f"
+    },
+    "eec3ae2c58fb11a7b6fbf0215db7d9d15fdd24e684bc213d41a9a28890e4d564": {
+      "path": "fov-maps/zombie_cod5_factory_patch/eec3ae2c58fb11a7b6fbf0215db7d9d15fdd24e684bc213d41a9a28890e4d564.acpatch",
+      "sha256": "9d4df3a414b043b12f95fe081edc6b69449a78ad2422e6087001d4d2ab360cc1",
+      "body_sha256": "40568ac376a7ea395c2b80f559e15fe0c437293ca80337d84162286f5a573f6d"
+    },
+    "aa5c7a27cb59bb8f1b03547e41be73ee3679b0549d441296b7cc446ca4fe1348": {
+      "path": "fov-maps/zombie_cod5_factory_patch/aa5c7a27cb59bb8f1b03547e41be73ee3679b0549d441296b7cc446ca4fe1348.acpatch",
+      "sha256": "c8c486133cfb2d063c8052120b1e487c7a493c2f1aa7e2a15a2e0fbcfc0b5a5d",
+      "body_sha256": "51f9ee408853805ddfe6d425a5c0e449dd7f8f944a4be77623652155c6838b0b"
+    },
+    "549f83714c96874f77bdf145f825e4522d6eda1371ea90a1177090a76819bfd8": {
+      "path": "fov-maps/zombie_cod5_factory_patch/549f83714c96874f77bdf145f825e4522d6eda1371ea90a1177090a76819bfd8.acpatch",
+      "sha256": "499ed7f03afb519664cbf1f5590d0ea62eb7647fc231738872e3d7c6c704ae73",
+      "body_sha256": "e4e8f1cabb597417f6bddc32b9f84f0bc1422d8a33d2d124fdb78497736f21d4"
+    },
+    "dd65dd509ea96f570891da27f26fa9d0bc01a2766c06fd160940ee7ec25a7390": {
+      "path": "fov-maps/zombie_cod5_factory_patch/dd65dd509ea96f570891da27f26fa9d0bc01a2766c06fd160940ee7ec25a7390.acpatch",
+      "sha256": "f5876ee4336b5c41aa377505b4eb92589be6cc1d0a506be5798571519d59c20c",
+      "body_sha256": "db5ec4c4daa66723eb817a5e7d8076e25cef9d0358f048ef7a779074f18d2d61"
+    },
+    "e32f5b8efb83e0d1085d088d50bd1de7ff08695d14088addc7435defad1440fc": {
+      "path": "fov-maps/zombie_cod5_factory_patch/e32f5b8efb83e0d1085d088d50bd1de7ff08695d14088addc7435defad1440fc.acpatch",
+      "sha256": "5322480c727ef8f559a66e9c79342d884b8f0891e7e933e047ea7084ad2e0427",
+      "body_sha256": "5b4654d1b445efa935da1c2b76ea3f00c406e2fac2226e0c2005bf6b178f5c9a"
+    },
+    "49c6607565592561e9b8819155860340747a4b5cfefa5b3ecd9e9978ea05dfeb": {
+      "path": "fov-maps/zombie_cod5_factory_patch/49c6607565592561e9b8819155860340747a4b5cfefa5b3ecd9e9978ea05dfeb.acpatch",
+      "sha256": "19f913a158c34676d974b19b4a05bc87d9f3c058781b712b54cbc19d7eb9fc56",
+      "body_sha256": "c18a371d35bc4177453c92bad4c322cb47a2c924f60e87efe8879e3b56f5406e"
+    },
+    "9dfdbf43d8a17456f8b7fde502f05991238dbd2a98f4c0cfbfa11607e87c6fe2": {
+      "path": "fov-maps/zombie_cod5_factory_patch/9dfdbf43d8a17456f8b7fde502f05991238dbd2a98f4c0cfbfa11607e87c6fe2.acpatch",
+      "sha256": "faf097652cdff28a47dff0888e2c9e93abd740c447adf9aa7bad6d3eed39fb3b",
+      "body_sha256": "aa6c33ff0a2a454559dd4a92674056cc531e22d450afcf56f5429a220b17717c"
+    },
+    "11efe91bdc2b1e952661037310603c7143615912c05bb82224cfa58b7fa1e3ef": {
+      "path": "fov-maps/zombie_cod5_factory_patch/11efe91bdc2b1e952661037310603c7143615912c05bb82224cfa58b7fa1e3ef.acpatch",
+      "sha256": "b8997f766d16dd5809bb74cb6c157e016c9c495c8e80e2e07467bf1a061aeb97",
+      "body_sha256": "f252ff082025fe2b09743dad11dc4e1b60adbb90fea205929d2a758d0dee0608"
+    },
+    "6a85bb3883516f8b141017b9928c629ff64fc790aa8569c2db081617427d31e6": {
+      "path": "fov-maps/zombie_cod5_factory_patch/6a85bb3883516f8b141017b9928c629ff64fc790aa8569c2db081617427d31e6.acpatch",
+      "sha256": "abbe450b1ee481f46a55fca5090fa178930c288c71c64b6e9845f55150fb47c0",
+      "body_sha256": "02c742f72a0bb199037e03903e0726bcc6bdba962672bddf98c838989bfcb5ca"
+    },
+    "d9f880085dbc2a66159d7d70fc7ea3bec57e7d6e4aee99d98a5489d7dbe4490f": {
+      "path": "fov-maps/zombie_cod5_factory_patch/d9f880085dbc2a66159d7d70fc7ea3bec57e7d6e4aee99d98a5489d7dbe4490f.acpatch",
+      "sha256": "e8f2e76cbdc8c5369521d08ddddc76abe91bdcee6ea8c8c18d2cb4f88cc50d83",
+      "body_sha256": "52c7908200164a8cb42266e5f566767a3024bace5826bac5b27cf5f0ddee3833"
+    },
+    "c0ce1848a70bc71b10a1971c802c5a06405f5fae0dc9dca88179b5544617fbf7": {
+      "path": "fov-maps/zombie_cod5_factory_patch/c0ce1848a70bc71b10a1971c802c5a06405f5fae0dc9dca88179b5544617fbf7.acpatch",
+      "sha256": "2f4a62790b4b4a622da418f792b0c3f39658bda8df394985bc8b7d7c4d4c92ba",
+      "body_sha256": "057ae2734169a5fb783cf3a03f741088eb9ef5e44f997df4ef76824aa298f014"
+    },
+    "a8dc7e955e740c750924b1762b878535096d6d24c72af671c81727f148ee0e2e": {
+      "path": "fov-maps/zombie_cod5_factory_patch/a8dc7e955e740c750924b1762b878535096d6d24c72af671c81727f148ee0e2e.acpatch",
+      "sha256": "93bc74b30c774458f36a4a14a7174b32f909b1912f792d8dd836d15d86a5e643",
+      "body_sha256": "bb13a7f960c36f69591cd8583c7d1479f72a7a848d1f870d090e921052cf548c"
+    },
+    "4a94d605912876fb47e919b4289736c654f58c5e74caab7102df77fcb145fb05": {
+      "path": "fov-maps/zombie_cod5_factory_patch/4a94d605912876fb47e919b4289736c654f58c5e74caab7102df77fcb145fb05.acpatch",
+      "sha256": "27fe2935a3002bf3fac373c02542707f98d991cd5f4d56a317839c89627a8c4f",
+      "body_sha256": "49efc2fc28a445d5c1ecf2222d159f2688dd5f4b026d7f30f8ca98b19e98914b"
+    },
+    "7266d472e8c4237ea3031b56416c43fbd4618829cd6fff38c4e137dda1ec2fc3": {
+      "path": "fov-maps/zombie_cod5_factory_patch/7266d472e8c4237ea3031b56416c43fbd4618829cd6fff38c4e137dda1ec2fc3.acpatch",
+      "sha256": "8b38b0ca15ca5018a26ba33e771211968079e8a3445dc9f8b258d9b5cbea65a3",
+      "body_sha256": "1946263f089d7e570466eab7c1732c22342220d8d589e5aa68f956f409a0ee19"
+    },
+    "d0f3b95e2816c778d4d5be5f770d5a91661f367c238eb71c050333cbdb4b3ce0": {
+      "path": "fov-maps/zombie_cod5_factory_patch/d0f3b95e2816c778d4d5be5f770d5a91661f367c238eb71c050333cbdb4b3ce0.acpatch",
+      "sha256": "2c84dcca55dff0c552bd60d0121f056f5f5a1cc2c4d9c167100a1a4c4262790d",
+      "body_sha256": "c2a673f315e4a1fd7bc684b3875a083bd0dee98bdbc5a62a98f38cb4813f6189"
+    },
+    "e8c366469a166f303743cad2ca483aeb9598bf42df5cbee256177db7a8bf96b4": {
+      "path": "fov-maps/zombie_cod5_factory_patch/e8c366469a166f303743cad2ca483aeb9598bf42df5cbee256177db7a8bf96b4.acpatch",
+      "sha256": "0adf62de6af2c028c5e2a1bee859dab19fa2e7a1b8223b75d15ff5bf54134bb9",
+      "body_sha256": "9a3c512a28ff99ca9d460227019ff095c6520f1b76a3ea7ef1fdd0431dfc1f00"
+    },
+    "5635067025450ba7fd5eb893c38730275071433017c5079f56450724c506724e": {
+      "path": "fov-maps/zombie_cod5_factory_patch/5635067025450ba7fd5eb893c38730275071433017c5079f56450724c506724e.acpatch",
+      "sha256": "e8aa5d1674266b7996a52e4d51955c9b0072b2f4170ad1e27ce5e714b08a49af",
+      "body_sha256": "0837157b79bb5b791869c22acdf1badf7b46736e1ad52da0ae94eee4b0af8ec0"
+    }
+  }
+}

@@ -52,17 +52,17 @@
         }
       },
       "files": {
-        "zone/Common/zombie_cosmodrome_patch.ff": "17605530f79a315ca88e214f3976faaf224278c69440510be884dffc17514729",
-        "zone/Common/zombie_coast_patch.ff": "a9beed88aee2fa21179bf2ca4c844e8e0068e8861467ac24da146236aa36b960",
-        "zone/Common/zombie_pentagon_patch.ff": "0efc8dfc2ea241a45b72e73498e019daa89a95a053d295330f291b537df6df10",
-        "zone/Common/zombie_theater_patch.ff": "8af2d8ff1de64ada9a3197aaf078b4fba77461fdf86b3975518862c45127b700",
-        "zone/Common/zombie_moon_patch.ff": "3ebae28170f5aceb12f7004bb8b71dc74a68fc6ec97043415646d49d4e7690d9",
-        "zone/Common/zombie_cod5_prototype_patch.ff": "8b661001549da0d9f3cf3de28a1511423b268765ae1736727284313629adab31",
-        "zone/Common/zombie_cod5_factory_patch.ff": "5aab72c418d358763abc1b3d5064a1a432198fb611d2128f4b76377a14a9d142",
-        "zone/Common/zombie_temple_patch.ff": "79b8523ea4534d782e59328376ca674bce4e39afcffd949106a3a7269e2c55fd",
-        "zone/Common/zombie_cod5_sumpf_patch.ff": "9d1c183dd1b7a51d23e2c3f9c754364dcb48a615c5d36614ff4d12ea38deaeba",
-        "zone/Common/zombie_cod5_asylum_patch.ff": "c8495bf2966a06ea0c74c1f68f6ee90e10a30eecb2da16854e6ad440d3a213b6",
-        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "be568c206c809a6d245a699863eb334bffc30120e4c9d2be08c450386b702632",
+        "zone/Common/zombie_cosmodrome_patch.ff": "a85007703f98d93ddeda6b0f705036b08b32a65dcea1b572be76f65f81dd1c51",
+        "zone/Common/zombie_coast_patch.ff": "7111c94c993d133899a1e44d0831d00f1958f6fb707295257874bda9260cae3a",
+        "zone/Common/zombie_pentagon_patch.ff": "88ccf8ef1e3fa86ceeae902fe747dc1e26b72724b76df8b121a3938c6a239225",
+        "zone/Common/zombie_theater_patch.ff": "a1b32d097df802994d4a3a4f4096203e1bd2b0b70d6cf8995ab0a72820818ad5",
+        "zone/Common/zombie_moon_patch.ff": "f6ab0beb71b9e0f0d65635144d4a23c4a1455b1c13d9d39bb31eb076c51daa5d",
+        "zone/Common/zombie_cod5_prototype_patch.ff": "40b71d0eb65aca6bfbea6105eeeb1dcb9849028970e1646c7d5253456319f441",
+        "zone/Common/zombie_cod5_factory_patch.ff": "6cdc327a2dfafaa5f00697fb3b7e641c0e2e7e4882db45091d602ad9c985c3c8",
+        "zone/Common/zombie_temple_patch.ff": "4f053f21bbe2ec9be963d7a4495e50e2d1f6be4f45569f4acd4ae66f10252a1f",
+        "zone/Common/zombie_cod5_sumpf_patch.ff": "9ccdd66b44187653ee75b4989a80075609db0054f1d1a949c9373c086249a07d",
+        "zone/Common/zombie_cod5_asylum_patch.ff": "0e15cb7b27ae556674e8ab39dc7a425a1199dd5252ecbf4303adaf9901ab4b3e",
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "25be461d73e8aa26e0bb8c8cf5640a2947dcb01b373f494b4ccc3dc6d93deedd",
         "main/iw_animatedcamos.iwd": "89a68ac7310046d1d1a90c70400d2cd3b5c3d03fcd5c753ea01f7a13eff57a3b",
         "zone/Common/mod.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
         "zone/Common/mp_animatedcamos.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
@@ -71,149 +71,331 @@
       "profiles": {
         "zone/Common/zombie_theater_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_theater_patch/box.acpatch",
-            "sha256": "4abda3a5a2b37d99116b1a36439cd914a2a2f47a985f1dafec9190e15e331af1",
-            "body_sha256": "5393c462396966bfc838ed2bf88fe576d910816cc1402ab6d1f16b6ebb282b6b"
+            "path": "patches/revised/normal/zombie_theater_patch/box.acpatch",
+            "sha256": "8cedb717cbd0036c19f5ebb8a908981df8b45ac1a39d006bf3c1c99f3fa3ac18",
+            "body_sha256": "93facc9e7fab61ca593a4749aaa5192ee953cb545fd134c38f83e9c71aa6afb7"
           },
           "traps": {
-            "path": "patches/normal/zombie_theater_patch/traps.acpatch",
-            "sha256": "92fd7279c61956cf5626321b741d8af71b5db193bd709f71d4d4183fea44d2f1",
-            "body_sha256": "990697ddc54b0923face8d9a61faaec2edfaccb6c67fcc0fed3891f23769168e"
+            "path": "patches/revised/normal/zombie_theater_patch/traps.acpatch",
+            "sha256": "c7aa0b5d9b2e97a49a20a9c257f070d659a82b57c06ac4570ee6587fe89a8fc4",
+            "body_sha256": "ad8ba1dacf9d5b86be0ed640e6e9350baec6c30dfca072996291083e2d4ac0aa"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_theater_patch/box+traps.acpatch",
-            "sha256": "b9b796013e9dcbfe0965ea8b8cfe396722735ea74644f3f22619cdf2a32d699b",
-            "body_sha256": "1bd8b8af0acd702821c7da3c546766d7b9d8457a5dc7a52f3c5efaee2b137acd"
+            "path": "patches/revised/normal/zombie_theater_patch/box+traps.acpatch",
+            "sha256": "b92e63ae5d72f865c9cffc109c5c6e62b8ee318d5affecf728cb95c73deebe13",
+            "body_sha256": "f57bde07e921a98acc0e747e1bdabe3a62f3cbc35fbe787152a23afda20b8432"
           }
         },
         "zone/Common/zombie_pentagon_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_pentagon_patch/box.acpatch",
-            "sha256": "6f169f0f9abdd1a9eccff7ff7052b1b59c4c06be51796b93a578305693bb450e",
-            "body_sha256": "89f2b7242ed0d8fbbbde3a83ac32ae67e3944c6a343f1f09837e05bd85533a91"
+            "path": "patches/revised/normal/zombie_pentagon_patch/box.acpatch",
+            "sha256": "13571076fc7f5db30fcfba0f5a2a73dfdba7c371146f75784bfbe4a3e24d55dc",
+            "body_sha256": "f4753f17be59fdbc6e230849b25f6bd1b3a97d63ee2478d9b16587569e812b8d"
           },
           "traps": {
-            "path": "patches/normal/zombie_pentagon_patch/traps.acpatch",
-            "sha256": "b336109ab8463810313a1d9708c3329403acec564b02638866b1ed2aceeec5c3",
-            "body_sha256": "8bad4111591c0f26d7b5ebdeb7a3d41b88b3e882db4ef1d76aa7e4576a4824e2"
+            "path": "patches/revised/normal/zombie_pentagon_patch/traps.acpatch",
+            "sha256": "4b080eb276fdaedcceecc48def0f7b20843aa5a405eac917e3f687c3dd2ba2a9",
+            "body_sha256": "37e9a4a11f1175fe3889e1fc1b083c3bef4ce7ad5380031c8df6a78511d00f69"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_pentagon_patch/box+traps.acpatch",
-            "sha256": "01552bc60364693a218d0f6b68c6c06fda4ea7c1290b2d3d0fa955d1d9299e98",
-            "body_sha256": "29ea19688df2d7998cd4b48227933a86bec34356aca1690635feab261dd43640"
+            "path": "patches/revised/normal/zombie_pentagon_patch/box+traps.acpatch",
+            "sha256": "60e1a5e55ee29e7c36fc3cff832ab11bc21bfff066198c01b3296bd0e9f71355",
+            "body_sha256": "07ee84365739f164da6fa0dc4983b10982edcfd4784576c1d6bd57fc58ca5ab4"
           }
         },
         "zone/Common/zombie_cod5_prototype_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_cod5_prototype_patch/box.acpatch",
-            "sha256": "e853c0825de4668a865e7b6f5e6417ad4b4cde57f872f4bace1480fa21a9cb6e",
-            "body_sha256": "de9fda5d0b40c7328114e042bb8bdcd43a3a4ac7e13a1b2c3771af7301c20c4b"
+            "path": "patches/revised/normal/zombie_cod5_prototype_patch/box.acpatch",
+            "sha256": "2adbe16316cefcaea9b0fb2bd11975eddc8081261f7771f76086c94a3c57ce4c",
+            "body_sha256": "dd71e48923037ed398f554ee3700a9ea5ae5b52714b54020ce3f16e13cadebb3"
           }
         },
         "zone/Common/zombie_coast_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_coast_patch/box.acpatch",
-            "sha256": "8b7ffe4db85df7b9857cc8dd25dcf6662ad6a9c510dfc684a9c585369c77f91d",
-            "body_sha256": "0a306713561c9a597b91c0e1941c1992cc513687490fecaaabe9d50810cb30ae"
+            "path": "patches/revised/normal/zombie_coast_patch/box.acpatch",
+            "sha256": "febfe7df8a6f95806340f4e39cde04a8501998cc87f6bd3e38c2d1cc50bc3227",
+            "body_sha256": "0e018be94316f650e7e8a32530268707fe1d2aa5230b239c251ac5f0f6c7f446"
           },
           "george": {
-            "path": "patches/normal/zombie_coast_patch/george.acpatch",
-            "sha256": "b975a9f3e2d907609fef0a32dd18db46ec8d60c358b153c1b512b625da517751",
-            "body_sha256": "65ca64f6cad5518ba40a4b91562350a93ac1f6dac90d38d5c603ee4dfc085f7e"
+            "path": "patches/revised/normal/zombie_coast_patch/george.acpatch",
+            "sha256": "0ec6bebcd27d8d4eee50b411b6a54861ff21ef696117c9e0cf251826f0ef62ce",
+            "body_sha256": "01d091294d242251fd07f65b75d014975d9a16520a5fc442e01e349f773efacb"
           },
           "box+george": {
-            "path": "patches/normal/zombie_coast_patch/box+george.acpatch",
-            "sha256": "8f0b46216b0d6ae12a68473b17ca7568e2c56cdcea48990f36f59fd27aba6cb6",
-            "body_sha256": "5011e54aff586c174e2bdbd1de11648903c59bb428ea17eb6b12318c2087df05"
+            "path": "patches/revised/normal/zombie_coast_patch/box+george.acpatch",
+            "sha256": "2b82a79fe69b084491f55337a203a2318312c2599b6c76f9b3c7f4c9ad372dae",
+            "body_sha256": "7ca18248fbe230a4039687ac14d63e3efddd48e0b73ccfa8748603450ed0f76b"
           }
         },
         "zone/Common/zombie_temple_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_temple_patch/box.acpatch",
-            "sha256": "8506a6a5a63b1b7f0ed67f06950b0bcf150db7f4d2392f8d7f8a96a779027832",
-            "body_sha256": "12923e4c7462404550d6c976f0bd1cee1c95c5354a0ecaf4b27e93e1641d220b"
+            "path": "patches/revised/normal/zombie_temple_patch/box.acpatch",
+            "sha256": "9de71a232214b6e4fdbfabef04dfaf2f9e6012ff591c27e358f242b035899f2e",
+            "body_sha256": "1644e7762dc0ac36f559a3d3a7d8c631a29cc1bbb5dbf992b8a24986e2f4aaff"
           }
         },
         "zone/Common/zombie_cosmodrome_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_cosmodrome_patch/box.acpatch",
-            "sha256": "eebf6870fd0963f09ff63e4b246faadbe0c240725c9f2a22bd652aafd74271d7",
-            "body_sha256": "950bf9c254c8c70637c5d5f2a43330ab951bc5a1d4b0f03c4f59cefc3921221b"
+            "path": "patches/revised/normal/zombie_cosmodrome_patch/box.acpatch",
+            "sha256": "32135ea09d7ac9a4815c27730f5d7ca1233c719750a6269b7f4232de0a3b1fd1",
+            "body_sha256": "debfccc1ca304c1bba292bf1cfda20ddf3448c7d07411f6346811d5c66b12168"
           },
           "traps": {
-            "path": "patches/normal/zombie_cosmodrome_patch/traps.acpatch",
-            "sha256": "39f29acf755877d5b9de7d6e3f9a190640e81ba0ba4a11ec8423a622caa184e3",
-            "body_sha256": "8d6b3e4c823372c071352d519e2873b626e91c2f85ffffed1650665263546908"
+            "path": "patches/revised/normal/zombie_cosmodrome_patch/traps.acpatch",
+            "sha256": "0bea7a7b9d0b61d4aab13665756e25ff82e68e26457366d2bf4c0536900f4755",
+            "body_sha256": "83e6737df85d738c17faeea8a12cc665047590b1c3f28c51e8f301b7f349671c"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_cosmodrome_patch/box+traps.acpatch",
-            "sha256": "87d41ea1a467e6cfbbf41fbf1fd44c4d6f7d0dcf7ea5f68d18bd704acde1c3b7",
-            "body_sha256": "428b5d358f64067b6ed6fa669202e4b300e93810592f24bd04213931e0e9611f"
+            "path": "patches/revised/normal/zombie_cosmodrome_patch/box+traps.acpatch",
+            "sha256": "97a35702a75f33137becbe4cfca034e7852d1fb4d203bcebb32b54557a8dcfcc",
+            "body_sha256": "f562d0995ba9e968c22bcd1ba70fded347d1aeda999ffb21fc3e8b57cd8b5075"
           }
         },
         "zone/Common/zombie_cod5_factory_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_cod5_factory_patch/box.acpatch",
-            "sha256": "3d578a1e961406391d9677fff8863327056febbc9342242732c9aec3dd9fb066",
-            "body_sha256": "6f7e98ee99cb89ad6c9464c411b2204a8fa5b8214c9749eced0b269d63db1dd2"
+            "path": "patches/revised/normal/zombie_cod5_factory_patch/box.acpatch",
+            "sha256": "8907cada4a3e9a250f9c1c6114a6d77080f373be8facce386da3e501edeb20e9",
+            "body_sha256": "9dfdbf43d8a17456f8b7fde502f05991238dbd2a98f4c0cfbfa11607e87c6fe2"
           },
           "traps": {
-            "path": "patches/normal/zombie_cod5_factory_patch/traps.acpatch",
-            "sha256": "65b8e5e4cc8d3fb52f335f5625f0af3f22dcb7b5dff101f8d4fd8881755bcf20",
-            "body_sha256": "d4878ba839986929b0444892d03a4d4414408eb1d2f1534a79a417bd95546939"
+            "path": "patches/revised/normal/zombie_cod5_factory_patch/traps.acpatch",
+            "sha256": "36602fccc1419360cc6c67d9d2e966f5edf752bc405f76525f435d7e1ab7ca15",
+            "body_sha256": "11efe91bdc2b1e952661037310603c7143615912c05bb82224cfa58b7fa1e3ef"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_cod5_factory_patch/box+traps.acpatch",
-            "sha256": "4bcda216753072361ac69ee35b22d3aa42cdce4136e4458c6c63f90942c29eec",
-            "body_sha256": "bf518b4f01b3b1da8e8e14f38f8a9b740dc6dbf97930c62d71e2a5c6c6c3059e"
+            "path": "patches/revised/normal/zombie_cod5_factory_patch/box+traps.acpatch",
+            "sha256": "016255b61fb76614dadff3b9538ca50306f3960892d5920b4d4ca6d7937b9aa2",
+            "body_sha256": "6a85bb3883516f8b141017b9928c629ff64fc790aa8569c2db081617427d31e6"
           }
         },
         "zone/Common/zombie_cod5_sumpf_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_cod5_sumpf_patch/box.acpatch",
-            "sha256": "0075266b6e6474eedb0b8633d3c6f05bb33d764db0c1c967222c982d77c2fcb8",
-            "body_sha256": "b4182d0289e070709efe284a2dcab24b321eeb254a4133aa64d9626b2c449a2e"
+            "path": "patches/revised/normal/zombie_cod5_sumpf_patch/box.acpatch",
+            "sha256": "6c44e9a81863ac1cdaeec8bb16137374fcdbb1b2ab71c822a4c665d94f220fb2",
+            "body_sha256": "0061755468147e1155057cd964b967d6e460bbe42f1e517f63eb1e1abc69ca3a"
           },
           "traps": {
-            "path": "patches/normal/zombie_cod5_sumpf_patch/traps.acpatch",
-            "sha256": "a6bc5994a6dddf603a85a20a21728a564bf3750d69140039e4cdbfe32687c78e",
-            "body_sha256": "a825c275e0f2fc11c050bc6d2dc34955264ae875a55582e51dc2f20bf8b1a621"
+            "path": "patches/revised/normal/zombie_cod5_sumpf_patch/traps.acpatch",
+            "sha256": "bc4f78e94e05b137f23ed6f7ee6563c520da3e71101155b40c4bebed75ebc8c8",
+            "body_sha256": "5dbca762c2d8dba234f17ba9f2db5e8be2cc849a4322fd53441cf2c3286fc48e"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_cod5_sumpf_patch/box+traps.acpatch",
-            "sha256": "db2cb6a794423fcec119319d87a7fa9d25032ce83f9d7ff84ebe59326c73a64c",
-            "body_sha256": "a6391f4e419e6d96d40371dd7418e379e9cb83847f3181795ea01acc0b607803"
+            "path": "patches/revised/normal/zombie_cod5_sumpf_patch/box+traps.acpatch",
+            "sha256": "95d6e87e9ef4c22d7e92d873f82ad8419965f15bc348e8949a58d03278100ac2",
+            "body_sha256": "110ae97957cf7821369cdefbefb99229fdcac47674c19863fa08f9c9b3923781"
           }
         },
         "zone/Common/zombie_cod5_asylum_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_cod5_asylum_patch/box.acpatch",
-            "sha256": "24103b8c2c74982f3ecc7b7573b127cfafba803cc3dbc5561ea7e5edd134adf6",
-            "body_sha256": "5e2a9f851aec87695d76d278d91399dc44c895cb914097a94c86595f45aa9c08"
+            "path": "patches/revised/normal/zombie_cod5_asylum_patch/box.acpatch",
+            "sha256": "292f8ec0df7bce7a3289f0141d9afdd3c1c594836c8709e185390aeb064d0fa7",
+            "body_sha256": "acc648dca11e3c02a688af84c9a3f41c28179db30dd1c8d8de6155e21ebdf56e"
           },
           "traps": {
-            "path": "patches/normal/zombie_cod5_asylum_patch/traps.acpatch",
-            "sha256": "73c2741747eee8c7d889bebc527e9a3ac44a48916d3239377b71c03bc97c5c95",
-            "body_sha256": "05fa4535c8fbc8b2f671064da12aab6c9fa76b69a8d7de0b01f8e5cbd1b9bd3c"
+            "path": "patches/revised/normal/zombie_cod5_asylum_patch/traps.acpatch",
+            "sha256": "fb2636de654956545776d58623fdcc9728530a4f621ee545d10685ba9b84a5b1",
+            "body_sha256": "c01b4e67b7719315be1cbb3b7430483ec81c6eea0efdc51f7fccc4c1ee4c0287"
           },
           "box+traps": {
-            "path": "patches/normal/zombie_cod5_asylum_patch/box+traps.acpatch",
-            "sha256": "7363ffd6be209a8f719d89380cf0d724508a3df4ac2d1bc520471faff0c49acd",
-            "body_sha256": "33807921cfe53109ebb3fbb9f35d89c5ce4c866c4ed081fca2307978eed40666"
+            "path": "patches/revised/normal/zombie_cod5_asylum_patch/box+traps.acpatch",
+            "sha256": "d82d874600d90ac9bf498ec520e2957d52a81faf959926c832cb2ef4a3c2ba02",
+            "body_sha256": "f4f10533356a95f98cfe9c1f4004ee5569af7bdb327312ff3f8a3372bf81153a"
           }
         },
         "zone/Common/zombie_moon_patch.ff": {
           "box": {
-            "path": "patches/normal/zombie_moon_patch/box.acpatch",
-            "sha256": "90b364c505f8bb213f4bc2c5df6488ec02ffd7183e0a1dbe0d3a6530a2a6c843",
-            "body_sha256": "640674c28937f4aaac30ee8d997f3b0a04b975fa0943a84673c463744b15fdc5"
+            "path": "patches/revised/normal/zombie_moon_patch/box.acpatch",
+            "sha256": "1a0eff72131fc3995adff7603915f7117b91fc72ffc7a233a14f15c681078a27",
+            "body_sha256": "b4728fc22007c0173946cf68baca65bd410fc658a60069f3653a186180a70eb5"
           }
         },
         "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
           "box": {
-            "path": "patches/normal/zombie_moon_patch_spawn_fix/box.acpatch",
-            "sha256": "6efaca52725f88e418c6dc5b3488b290c5a202622241fd74fd06203fa41ce42a",
-            "body_sha256": "74b4f071b8810aeeb982b51d8ea0528bb1d2ea946779e9fa6564f889eec319fd"
+            "path": "patches/revised/normal/zombie_moon_patch_spawn_fix/box.acpatch",
+            "sha256": "90ed8c23c88e54f89d39b5b1076051588ef6338df700f19dbaea29db4d5ebbbb",
+            "body_sha256": "b1482d1ea45158164bc0fe4963342c71da0dedc1b1c65f9626a94edb4b5311f9"
+          }
+        }
+      },
+      "previous_profiles": {
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
+          "source_sha256": "be568c206c809a6d245a699863eb334bffc30120e4c9d2be08c450386b702632",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_moon_patch_spawn_fix/box.acpatch",
+              "sha256": "6efaca52725f88e418c6dc5b3488b290c5a202622241fd74fd06203fa41ce42a",
+              "body_sha256": "74b4f071b8810aeeb982b51d8ea0528bb1d2ea946779e9fa6564f889eec319fd"
+            }
+          }
+        },
+        "zone/Common/zombie_coast_patch.ff": {
+          "source_sha256": "a9beed88aee2fa21179bf2ca4c844e8e0068e8861467ac24da146236aa36b960",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_coast_patch/box.acpatch",
+              "sha256": "8b7ffe4db85df7b9857cc8dd25dcf6662ad6a9c510dfc684a9c585369c77f91d",
+              "body_sha256": "0a306713561c9a597b91c0e1941c1992cc513687490fecaaabe9d50810cb30ae"
+            },
+            "george": {
+              "path": "patches/normal/zombie_coast_patch/george.acpatch",
+              "sha256": "b975a9f3e2d907609fef0a32dd18db46ec8d60c358b153c1b512b625da517751",
+              "body_sha256": "65ca64f6cad5518ba40a4b91562350a93ac1f6dac90d38d5c603ee4dfc085f7e"
+            },
+            "box+george": {
+              "path": "patches/normal/zombie_coast_patch/box+george.acpatch",
+              "sha256": "8f0b46216b0d6ae12a68473b17ca7568e2c56cdcea48990f36f59fd27aba6cb6",
+              "body_sha256": "5011e54aff586c174e2bdbd1de11648903c59bb428ea17eb6b12318c2087df05"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_asylum_patch.ff": {
+          "source_sha256": "c8495bf2966a06ea0c74c1f68f6ee90e10a30eecb2da16854e6ad440d3a213b6",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_cod5_asylum_patch/box.acpatch",
+              "sha256": "24103b8c2c74982f3ecc7b7573b127cfafba803cc3dbc5561ea7e5edd134adf6",
+              "body_sha256": "5e2a9f851aec87695d76d278d91399dc44c895cb914097a94c86595f45aa9c08"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_cod5_asylum_patch/traps.acpatch",
+              "sha256": "73c2741747eee8c7d889bebc527e9a3ac44a48916d3239377b71c03bc97c5c95",
+              "body_sha256": "05fa4535c8fbc8b2f671064da12aab6c9fa76b69a8d7de0b01f8e5cbd1b9bd3c"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_cod5_asylum_patch/box+traps.acpatch",
+              "sha256": "7363ffd6be209a8f719d89380cf0d724508a3df4ac2d1bc520471faff0c49acd",
+              "body_sha256": "33807921cfe53109ebb3fbb9f35d89c5ce4c866c4ed081fca2307978eed40666"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_factory_patch.ff": {
+          "source_sha256": "5aab72c418d358763abc1b3d5064a1a432198fb611d2128f4b76377a14a9d142",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_cod5_factory_patch/box.acpatch",
+              "sha256": "3d578a1e961406391d9677fff8863327056febbc9342242732c9aec3dd9fb066",
+              "body_sha256": "6f7e98ee99cb89ad6c9464c411b2204a8fa5b8214c9749eced0b269d63db1dd2"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_cod5_factory_patch/traps.acpatch",
+              "sha256": "65b8e5e4cc8d3fb52f335f5625f0af3f22dcb7b5dff101f8d4fd8881755bcf20",
+              "body_sha256": "d4878ba839986929b0444892d03a4d4414408eb1d2f1534a79a417bd95546939"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_cod5_factory_patch/box+traps.acpatch",
+              "sha256": "4bcda216753072361ac69ee35b22d3aa42cdce4136e4458c6c63f90942c29eec",
+              "body_sha256": "bf518b4f01b3b1da8e8e14f38f8a9b740dc6dbf97930c62d71e2a5c6c6c3059e"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_prototype_patch.ff": {
+          "source_sha256": "8b661001549da0d9f3cf3de28a1511423b268765ae1736727284313629adab31",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_cod5_prototype_patch/box.acpatch",
+              "sha256": "e853c0825de4668a865e7b6f5e6417ad4b4cde57f872f4bace1480fa21a9cb6e",
+              "body_sha256": "de9fda5d0b40c7328114e042bb8bdcd43a3a4ac7e13a1b2c3771af7301c20c4b"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_sumpf_patch.ff": {
+          "source_sha256": "9d1c183dd1b7a51d23e2c3f9c754364dcb48a615c5d36614ff4d12ea38deaeba",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_cod5_sumpf_patch/box.acpatch",
+              "sha256": "0075266b6e6474eedb0b8633d3c6f05bb33d764db0c1c967222c982d77c2fcb8",
+              "body_sha256": "b4182d0289e070709efe284a2dcab24b321eeb254a4133aa64d9626b2c449a2e"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_cod5_sumpf_patch/traps.acpatch",
+              "sha256": "a6bc5994a6dddf603a85a20a21728a564bf3750d69140039e4cdbfe32687c78e",
+              "body_sha256": "a825c275e0f2fc11c050bc6d2dc34955264ae875a55582e51dc2f20bf8b1a621"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_cod5_sumpf_patch/box+traps.acpatch",
+              "sha256": "db2cb6a794423fcec119319d87a7fa9d25032ce83f9d7ff84ebe59326c73a64c",
+              "body_sha256": "a6391f4e419e6d96d40371dd7418e379e9cb83847f3181795ea01acc0b607803"
+            }
+          }
+        },
+        "zone/Common/zombie_cosmodrome_patch.ff": {
+          "source_sha256": "17605530f79a315ca88e214f3976faaf224278c69440510be884dffc17514729",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_cosmodrome_patch/box.acpatch",
+              "sha256": "eebf6870fd0963f09ff63e4b246faadbe0c240725c9f2a22bd652aafd74271d7",
+              "body_sha256": "950bf9c254c8c70637c5d5f2a43330ab951bc5a1d4b0f03c4f59cefc3921221b"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_cosmodrome_patch/traps.acpatch",
+              "sha256": "39f29acf755877d5b9de7d6e3f9a190640e81ba0ba4a11ec8423a622caa184e3",
+              "body_sha256": "8d6b3e4c823372c071352d519e2873b626e91c2f85ffffed1650665263546908"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_cosmodrome_patch/box+traps.acpatch",
+              "sha256": "87d41ea1a467e6cfbbf41fbf1fd44c4d6f7d0dcf7ea5f68d18bd704acde1c3b7",
+              "body_sha256": "428b5d358f64067b6ed6fa669202e4b300e93810592f24bd04213931e0e9611f"
+            }
+          }
+        },
+        "zone/Common/zombie_moon_patch.ff": {
+          "source_sha256": "3ebae28170f5aceb12f7004bb8b71dc74a68fc6ec97043415646d49d4e7690d9",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_moon_patch/box.acpatch",
+              "sha256": "90b364c505f8bb213f4bc2c5df6488ec02ffd7183e0a1dbe0d3a6530a2a6c843",
+              "body_sha256": "640674c28937f4aaac30ee8d997f3b0a04b975fa0943a84673c463744b15fdc5"
+            }
+          }
+        },
+        "zone/Common/zombie_pentagon_patch.ff": {
+          "source_sha256": "0efc8dfc2ea241a45b72e73498e019daa89a95a053d295330f291b537df6df10",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_pentagon_patch/box.acpatch",
+              "sha256": "6f169f0f9abdd1a9eccff7ff7052b1b59c4c06be51796b93a578305693bb450e",
+              "body_sha256": "89f2b7242ed0d8fbbbde3a83ac32ae67e3944c6a343f1f09837e05bd85533a91"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_pentagon_patch/traps.acpatch",
+              "sha256": "b336109ab8463810313a1d9708c3329403acec564b02638866b1ed2aceeec5c3",
+              "body_sha256": "8bad4111591c0f26d7b5ebdeb7a3d41b88b3e882db4ef1d76aa7e4576a4824e2"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_pentagon_patch/box+traps.acpatch",
+              "sha256": "01552bc60364693a218d0f6b68c6c06fda4ea7c1290b2d3d0fa955d1d9299e98",
+              "body_sha256": "29ea19688df2d7998cd4b48227933a86bec34356aca1690635feab261dd43640"
+            }
+          }
+        },
+        "zone/Common/zombie_temple_patch.ff": {
+          "source_sha256": "79b8523ea4534d782e59328376ca674bce4e39afcffd949106a3a7269e2c55fd",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_temple_patch/box.acpatch",
+              "sha256": "8506a6a5a63b1b7f0ed67f06950b0bcf150db7f4d2392f8d7f8a96a779027832",
+              "body_sha256": "12923e4c7462404550d6c976f0bd1cee1c95c5354a0ecaf4b27e93e1641d220b"
+            }
+          }
+        },
+        "zone/Common/zombie_theater_patch.ff": {
+          "source_sha256": "8af2d8ff1de64ada9a3197aaf078b4fba77461fdf86b3975518862c45127b700",
+          "profiles": {
+            "box": {
+              "path": "patches/normal/zombie_theater_patch/box.acpatch",
+              "sha256": "4abda3a5a2b37d99116b1a36439cd914a2a2f47a985f1dafec9190e15e331af1",
+              "body_sha256": "5393c462396966bfc838ed2bf88fe576d910816cc1402ab6d1f16b6ebb282b6b"
+            },
+            "traps": {
+              "path": "patches/normal/zombie_theater_patch/traps.acpatch",
+              "sha256": "92fd7279c61956cf5626321b741d8af71b5db193bd709f71d4d4183fea44d2f1",
+              "body_sha256": "990697ddc54b0923face8d9a61faaec2edfaccb6c67fcc0fed3891f23769168e"
+            },
+            "box+traps": {
+              "path": "patches/normal/zombie_theater_patch/box+traps.acpatch",
+              "sha256": "b9b796013e9dcbfe0965ea8b8cfe396722735ea74644f3f22619cdf2a32d699b",
+              "body_sha256": "1bd8b8af0acd702821c7da3c546766d7b9d8457a5dc7a52f3c5efaee2b137acd"
+            }
           }
         }
       }
@@ -253,17 +435,17 @@
         }
       },
       "files": {
-        "zone/Common/zombie_cosmodrome_patch.ff": "cb2ff8c1ed6a46779c65105a3d8b5f54dee369afbd77e5cc73b919c0bda030df",
-        "zone/Common/zombie_coast_patch.ff": "e64b1ac66bf8f25c4e16b570f918a7c44a295ea6e3a43a5ad48489f4fdc0d52f",
-        "zone/Common/zombie_pentagon_patch.ff": "e748ad14b01ed47f34ec273101eca8d6513f1494da9936c4d47d835ed1ef28de",
-        "zone/Common/zombie_theater_patch.ff": "b300ae9f880558050bc24235d68bc5409d68509204c30e446be6d0b4eb53be9f",
-        "zone/Common/zombie_moon_patch.ff": "37e6c423679e49d2453973fa2f8012f09f3442f2d39ebfe62b74e4f88e27824c",
-        "zone/Common/zombie_cod5_prototype_patch.ff": "b843ce941d5c47eea62f3038bfca5bd193f6a75e283d02ef490cec66afe78396",
-        "zone/Common/zombie_cod5_factory_patch.ff": "c417b9a01fac167a0b7d133e5f06f6b6fa368e141a0b8d17a9d15595c4b268f0",
-        "zone/Common/zombie_temple_patch.ff": "874dfa41c069da143f95e0a92cd8ff6c0aeca30d59943699bde529b089d8e0c4",
-        "zone/Common/zombie_cod5_sumpf_patch.ff": "febb474e29ea27773a709ee33180812b5668207784ff5ab734ea097bfda3030a",
-        "zone/Common/zombie_cod5_asylum_patch.ff": "8d85b711e6db71ba17f8ac12625133db7a77466c32b5a1d6e43a840b1095f2cb",
-        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "ad7ef99abb1c938e74115aa87fe5d3cf737e84aa915aab1fbf5de26939fea3a9",
+        "zone/Common/zombie_cosmodrome_patch.ff": "db33fdc6ec87f32734a0589bd3c3e5bcdf0214f09908432a06ad12545adc9bac",
+        "zone/Common/zombie_coast_patch.ff": "b5bc51e3388a42277607de0f16e2d721158247e3e26ee6e61822f40e30aafc76",
+        "zone/Common/zombie_pentagon_patch.ff": "cf5c5f535d15a794316671d192b7b2c33c7e689a229195cfba051fa764295b10",
+        "zone/Common/zombie_theater_patch.ff": "4dc8706f515ecb058c0c6d41361f8da9b1364da30e685a87f70570df6ef42cf5",
+        "zone/Common/zombie_moon_patch.ff": "be1549b493fadd89389b50947e4e008bc6b5e862168ebb6bbc0f5b3381f514bf",
+        "zone/Common/zombie_cod5_prototype_patch.ff": "ae8b4b0be47b1fc6d46db7bc1f2ba04c513110e85bcaae6df4a5a88ff18ab778",
+        "zone/Common/zombie_cod5_factory_patch.ff": "2c706baf44c8f5837831a7b6df735a01ba2577bb033484bd347d5c947e5e3a84",
+        "zone/Common/zombie_temple_patch.ff": "76b2921c52eb739dc359d1a1547335ba130f5da8a8765fd79dda42145eba6dc1",
+        "zone/Common/zombie_cod5_sumpf_patch.ff": "5d70df2ecef8aca6faa2d597dab96bf277e86d3b0031783dd0a520454a5a6871",
+        "zone/Common/zombie_cod5_asylum_patch.ff": "35b0873b788b06840a25cf182de492f7efa5b43b89e882fe32b8ab022dafa42c",
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "2554b0421651a63ae20b6778d2cde5789c1ab674253d169e13428a3e9e361c57",
         "main/iw_animatedcamos.iwd": "89a68ac7310046d1d1a90c70400d2cd3b5c3d03fcd5c753ea01f7a13eff57a3b",
         "zone/Common/mod.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
         "zone/Common/mp_animatedcamos.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
@@ -272,149 +454,331 @@
       "profiles": {
         "zone/Common/zombie_theater_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_theater_patch/box.acpatch",
-            "sha256": "2cba8404da19925cb466baeb7a97aafd9d2335e614974e6216cd1e94572ed0f2",
-            "body_sha256": "d5e0c030b1f772b228b3213865b3cdae5805442df7ed627951c39650e51e608f"
+            "path": "patches/revised/goth/zombie_theater_patch/box.acpatch",
+            "sha256": "bb78601b2f747b096697c29520e6e7430da6d81f66098df70de151cf092c6989",
+            "body_sha256": "17519d5a99820d8a8483c2a780a8ffff83edd87f733647c0c9c105ae7b12e51c"
           },
           "traps": {
-            "path": "patches/goth/zombie_theater_patch/traps.acpatch",
-            "sha256": "6fb0ba28c488db58a62c3b30d65278d4580ba874db0685e66748549e5955eeb1",
-            "body_sha256": "f0530b7c21c7f738cedc4d99c4a26a746e7cab7a6c42357b7d5af3298e644736"
+            "path": "patches/revised/goth/zombie_theater_patch/traps.acpatch",
+            "sha256": "39e33613ddb949e64ebf85f5619851b8ee50dc431f337333fda39f732f1448fb",
+            "body_sha256": "b49dea6ba12503290d56690b999416465beb6ea1c807642b472e9cf3c7579dc1"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_theater_patch/box+traps.acpatch",
-            "sha256": "7af99136baa11969a123e3803a22ba8711dc7b634be35ce9202b8bde3b59517c",
-            "body_sha256": "4e5c9ef3e04bf78feb5601298c55d4e269af7ea11c082d10268b0b35d3014c3c"
+            "path": "patches/revised/goth/zombie_theater_patch/box+traps.acpatch",
+            "sha256": "b65952fa63ebc9c38463d7dc77ee7d0aaedc990f5653a082e69ad8894ca29643",
+            "body_sha256": "367ad434ed02415ca66b1c03abba43c9d5906ca99db18a01f2a516157279f30f"
           }
         },
         "zone/Common/zombie_pentagon_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_pentagon_patch/box.acpatch",
-            "sha256": "5488345f7a42a310575e10b7092d14c5351ed5ef18d1249eeb4d6c7a9fe5c66b",
-            "body_sha256": "d76f96ea2da67ad54b87d3b363ccf7f200d82cc274e1522cf6d1ea5dab958cb6"
+            "path": "patches/revised/goth/zombie_pentagon_patch/box.acpatch",
+            "sha256": "302a11164551aa3f3195eed245d00099644a70536fc8a53571fde59bb7e7998b",
+            "body_sha256": "c1ad2b9c60ae40c88c8648f713aeac33fdea682d1d8db059402e6d90147bdfc9"
           },
           "traps": {
-            "path": "patches/goth/zombie_pentagon_patch/traps.acpatch",
-            "sha256": "e1507cc612eeaadf0eb2d91443aee1f5d9f09c53d5b4bd67da104027a1c2a0bc",
-            "body_sha256": "30d0148370c24f68c0c91e20b9d91d0d9cb35c034a00c1363bdb16450929357f"
+            "path": "patches/revised/goth/zombie_pentagon_patch/traps.acpatch",
+            "sha256": "9a19894725c4d88a0e2829158b18b2baf45820ef051ff01ce7a7d3ebe1d64a8c",
+            "body_sha256": "5c93530bbeeeda4e19d853f3d57e12845ca00deec4feacd44b59a5bb028012c5"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_pentagon_patch/box+traps.acpatch",
-            "sha256": "6ab9f783f341348bf7436549829aa44ca755a75e1e1681a593d3abd55a905864",
-            "body_sha256": "e929c7ec452506ed87f7faafd50731339989cc73edf5ea561680cb4d1cdfe991"
+            "path": "patches/revised/goth/zombie_pentagon_patch/box+traps.acpatch",
+            "sha256": "216cfe2e2878dacb0af8022438bfdbb54e07fbedef47669dfecba360130556e8",
+            "body_sha256": "8810f9ec6ddd67e6c60b4e8fa17ba78c04d13c9889f8ef9b12605f43baecad20"
           }
         },
         "zone/Common/zombie_cod5_prototype_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_cod5_prototype_patch/box.acpatch",
-            "sha256": "4783eae7dfd70ffa2be6ea68df3d85e899b61e7b01ae6d0a07de97a1047423fa",
-            "body_sha256": "dc7785f2317834556b26dc735ddc1dde096871489141088eb71746b0d3e9e830"
+            "path": "patches/revised/goth/zombie_cod5_prototype_patch/box.acpatch",
+            "sha256": "f3478e09f021258258f76f046f2ea75942a968bee2f153cf344e9e569b892244",
+            "body_sha256": "c7c590f6295e2ff86e2db3208157cb8031a6b3fb3f8422102e37a0544684539b"
           }
         },
         "zone/Common/zombie_coast_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_coast_patch/box.acpatch",
-            "sha256": "60acb0aee1c1cbab6c682ff91fad8c9f880d427baedf2e96f34b447bdd18b6fa",
-            "body_sha256": "f2993ef559e037d72f20631238b22f53b645d5fbd4da8343c53bd6195d1cc045"
+            "path": "patches/revised/goth/zombie_coast_patch/box.acpatch",
+            "sha256": "1ccf968fab5a97c4f548384949b5adf81723e8c3ee73e6e93f8e0a55e54cddc5",
+            "body_sha256": "ea43c0395ee076683465f3c5082b2716693e8140a8cc6722b20e821383f5c079"
           },
           "george": {
-            "path": "patches/goth/zombie_coast_patch/george.acpatch",
-            "sha256": "525f7d440fc1c168cfdfd49aab1102c123966aa7d82c3305d26108fe49520088",
-            "body_sha256": "dfe8841acfb2208c902351c668cf9cb32f251497420f266305f84be1ad58d62b"
+            "path": "patches/revised/goth/zombie_coast_patch/george.acpatch",
+            "sha256": "8fcde9f304a1039963bda4609d00f5d671505e1f14990ef187ffe888172bd53b",
+            "body_sha256": "6f0c7fe97c5cf941da52f2187e819f380eed2a1f5376283ee2aaffb59fd39832"
           },
           "box+george": {
-            "path": "patches/goth/zombie_coast_patch/box+george.acpatch",
-            "sha256": "334e1275dc4e6cc4acf6884bcf96dc6beab6bf193cf59c6c0019cd70459ea6d5",
-            "body_sha256": "38dfabe6b2bf0303a3ab96cfe61ee2e1938ac582652f846504f177c44da02f5d"
+            "path": "patches/revised/goth/zombie_coast_patch/box+george.acpatch",
+            "sha256": "2b1b86a2c02d18047456640d407ecbd5c63ef9957c72ca18799994aca6c245a1",
+            "body_sha256": "7a174801a71691dca64378b8170df02734f88e606eb1857d09af1d96c8de1f8c"
           }
         },
         "zone/Common/zombie_temple_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_temple_patch/box.acpatch",
-            "sha256": "bd3a049e815f1d91599f0151bc3e5bbc3a873feae4d4ac91354c27fea2a2e55b",
-            "body_sha256": "0639a8cfe670e503301c23ea975a1c04ec93df5ca3ddc7d1615f3669dc28a646"
+            "path": "patches/revised/goth/zombie_temple_patch/box.acpatch",
+            "sha256": "43f4096fae07aa11d5bbeef41f6e84888e8a6b5d6e4933f3c4518108b3a536d1",
+            "body_sha256": "26b5ff5d09f2ce4bdf90da0b480ec7ccbc9cd1af42ff0261c2776df79cd5f8a3"
           }
         },
         "zone/Common/zombie_cosmodrome_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_cosmodrome_patch/box.acpatch",
-            "sha256": "e92f8941fda4ad54da0f64b3f60c822da4aa6bae7dc3a5bfd636c9e9ea52618d",
-            "body_sha256": "84713da5e590bcc390485b87a820601494458e52a3c8004ac42bd9fbf0446843"
+            "path": "patches/revised/goth/zombie_cosmodrome_patch/box.acpatch",
+            "sha256": "6fd08e244e73a14720aabbeded81304ac26e9dda924d8b1790cdae52d61af0fc",
+            "body_sha256": "daa483e3b405d4206f5937cc5163a023161a88ba33dc5820a66da7e20ea4ab38"
           },
           "traps": {
-            "path": "patches/goth/zombie_cosmodrome_patch/traps.acpatch",
-            "sha256": "89de8fa270844e28a4f9013113ee6f6b813e6b9f1dcbaafa3a5ccec56f6b65a2",
-            "body_sha256": "ee4c27171e5d83f5c6b5d4c360c34e3e2382ffac90cec60eaea7f6cd2df2596c"
+            "path": "patches/revised/goth/zombie_cosmodrome_patch/traps.acpatch",
+            "sha256": "b77314ffa5a04e4f24bd824b6cedc37362ce8d36ef3a2bff081b1a56016b0d42",
+            "body_sha256": "0da917e20183e02381a12e894301a0c332e1c7f89edfeaa650a34c8de82dca66"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_cosmodrome_patch/box+traps.acpatch",
-            "sha256": "635b61489351849fd79a1d497b9af2997bb8c8b0a779388e9e4bf9f392f7ac54",
-            "body_sha256": "f0781594d8d7d2c00d18089db2110393d4ad4b171b41dffa8d88676de9222a5c"
+            "path": "patches/revised/goth/zombie_cosmodrome_patch/box+traps.acpatch",
+            "sha256": "9d29cb5032de8469d406344f1e4fe6661d59603f05301b4554ab505a1fca412f",
+            "body_sha256": "54845c882d56a91edcde53f025c3117ba8492fe361022fce622c3a602d679fcb"
           }
         },
         "zone/Common/zombie_cod5_factory_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_cod5_factory_patch/box.acpatch",
-            "sha256": "0167cc4d8797dba471f3d19daf56fba8336fe40ae7074619fcd8067f43613c87",
-            "body_sha256": "a586db32f2460091acc4ff30c145a22a674b5d6875fadca5ef2d963b5b3d4221"
+            "path": "patches/revised/goth/zombie_cod5_factory_patch/box.acpatch",
+            "sha256": "f9b3b53e0c4ecc2d453e27622133aa72c7a305d8ba8a8fef09a16beccb88300d",
+            "body_sha256": "c0ce1848a70bc71b10a1971c802c5a06405f5fae0dc9dca88179b5544617fbf7"
           },
           "traps": {
-            "path": "patches/goth/zombie_cod5_factory_patch/traps.acpatch",
-            "sha256": "3977c83704122f825217362f115c207856542d39601d4dbf9ae2bd468c9be709",
-            "body_sha256": "d6dabcd9b4453648b3d8142e2ba889e2cee851dcf7a867a1be997666c820a09e"
+            "path": "patches/revised/goth/zombie_cod5_factory_patch/traps.acpatch",
+            "sha256": "fe62ba262ef366a5bd6200c0211aa753dbeaf0721d75b1929a8f5f5f7958b45e",
+            "body_sha256": "a8dc7e955e740c750924b1762b878535096d6d24c72af671c81727f148ee0e2e"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_cod5_factory_patch/box+traps.acpatch",
-            "sha256": "4e3b5b516cea237dbf1ac7c8ed6f9aa49c49b54ac8ec8edb7be993ee8dfb480e",
-            "body_sha256": "eec3ae2c58fb11a7b6fbf0215db7d9d15fdd24e684bc213d41a9a28890e4d564"
+            "path": "patches/revised/goth/zombie_cod5_factory_patch/box+traps.acpatch",
+            "sha256": "140ceebff30ad1bd12cb20ee2077df9ad129621ed4b7162be1e9d842139312d5",
+            "body_sha256": "4a94d605912876fb47e919b4289736c654f58c5e74caab7102df77fcb145fb05"
           }
         },
         "zone/Common/zombie_cod5_sumpf_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_cod5_sumpf_patch/box.acpatch",
-            "sha256": "c26859ae66933dd696f42de9b413f75d1315163aeecafc074ad55b13e91791f8",
-            "body_sha256": "98806285c438a8d47ff9516d760ae0403d61d27fb39f81685a9e0c31590a00ad"
+            "path": "patches/revised/goth/zombie_cod5_sumpf_patch/box.acpatch",
+            "sha256": "33d3eeb70660552d828baee540fe99009902d048a2152d3e6dfc06312d2e3d1b",
+            "body_sha256": "f14502ac1d147e6ef706f7fc9c87dab4c1a33d8aa78822077ba2d7fe77564b3b"
           },
           "traps": {
-            "path": "patches/goth/zombie_cod5_sumpf_patch/traps.acpatch",
-            "sha256": "e429ce8c44870ccfadf89fb1f7689c2d4d6c8208e32b4f25df3673565fd748ae",
-            "body_sha256": "7dc99de554ec2079befb7bfe75e68bd8e6c6bc6a6ee94aa4306047491d62be2b"
+            "path": "patches/revised/goth/zombie_cod5_sumpf_patch/traps.acpatch",
+            "sha256": "66049066f870dc72d93c7641ced36e8faf2f4d19ab4228658080d5d347212453",
+            "body_sha256": "a5c356e6c9f9a685371e23a0375ed2abe10f300dcccb78a2d8da6c250571649f"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_cod5_sumpf_patch/box+traps.acpatch",
-            "sha256": "f4f459a0f538961214cca138718db482d8f699c39d5b5d15ce1db74233d79916",
-            "body_sha256": "39eca61297c90625faf9f9bf1da995ea5f5d4cff41a972ab3dc0431db8f73b78"
+            "path": "patches/revised/goth/zombie_cod5_sumpf_patch/box+traps.acpatch",
+            "sha256": "a2d102e74cf17892f6886b10ae75a22ae95204d261d2ba94e208b9221514afe8",
+            "body_sha256": "1a4617e0e452ce27ee42cff0f6cc74ef4d4dcc76cc5462ce9af7fa4184a245d9"
           }
         },
         "zone/Common/zombie_cod5_asylum_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_cod5_asylum_patch/box.acpatch",
-            "sha256": "f9b11d83a871d440044f68f4e32893c8d0d10a6861baf1cc3141d2543ef74aca",
-            "body_sha256": "bf76246c1f9b80aab05eea8c7af88b0449aca5c786e49718059ad26726e17248"
+            "path": "patches/revised/goth/zombie_cod5_asylum_patch/box.acpatch",
+            "sha256": "7f3165a388332cecc9a9b57fc6dfbccabbdb5350075b66a5fc372637cd70f7b0",
+            "body_sha256": "42374c415f3cacc7464c899f62808a84a208fea58903fc8cc6207fc2f30237c6"
           },
           "traps": {
-            "path": "patches/goth/zombie_cod5_asylum_patch/traps.acpatch",
-            "sha256": "360c291d607621efa45bb8a2a7e902b7836e527c3d7ea16e201f39927a9ebbe1",
-            "body_sha256": "11d899edfb9548d88b7890808d347ba9839c422319cc1b87cbd07f9c458808cc"
+            "path": "patches/revised/goth/zombie_cod5_asylum_patch/traps.acpatch",
+            "sha256": "29c8d6185b0f5bef24e1b2a77a537f70c93c957be0b9969dc86df4374c6aedae",
+            "body_sha256": "ac52342a46cb61739d4d6aa774259b7e0d0f90a68ae6be661066b7a33261cf32"
           },
           "box+traps": {
-            "path": "patches/goth/zombie_cod5_asylum_patch/box+traps.acpatch",
-            "sha256": "d066e87dc154197ff13540188c42b6c2c29dc09d405dc437b682ac07eb7534ee",
-            "body_sha256": "08f41e3ec51764c61501f082d3d76cd66bb45d0f99e0463f43d73c87e44da2dc"
+            "path": "patches/revised/goth/zombie_cod5_asylum_patch/box+traps.acpatch",
+            "sha256": "3570eb91c11bae8615bd2427310124b586f59d258c230df068f829933060bdb7",
+            "body_sha256": "1e361f052baaf879fbaa9344c3670f000e5b38f10ffe02d786e996f867baf117"
           }
         },
         "zone/Common/zombie_moon_patch.ff": {
           "box": {
-            "path": "patches/goth/zombie_moon_patch/box.acpatch",
-            "sha256": "a4637dd2fda7a3226367bd7906c3d1a9f83f1679db0800b16ea19dfae83f9b76",
-            "body_sha256": "6244897867f3dd08dddd5096a250462220a1e8b03f1b3fa945217404b6ce7de4"
+            "path": "patches/revised/goth/zombie_moon_patch/box.acpatch",
+            "sha256": "e201f13ee7892e21c68af8704c45c821d842c0bfaee2f7ebccebbc3bf1f6919a",
+            "body_sha256": "e4be8c05ce08089c84ba0f727e1326ebd1f4812bce451e406c3d865cdfd12688"
           }
         },
         "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
           "box": {
-            "path": "patches/goth/zombie_moon_patch_spawn_fix/box.acpatch",
-            "sha256": "20dcf2471b57b76eb346e18b1b1e432c2447af407ff5a71a7cf671f6a29b3fd1",
-            "body_sha256": "288c0cebc013a2813d33541a1ea2e71cf0de1134d29714af53e3e43c04a8d3ee"
+            "path": "patches/revised/goth/zombie_moon_patch_spawn_fix/box.acpatch",
+            "sha256": "1de69b04cc89e19e46d2a266ccfba2aa6d1ea94c9ce327ab173b5062d1fe875e",
+            "body_sha256": "e1b4b877e1cf11dbe426cfeac51edc63498177d8c90edea1fd53eac73b39fea5"
+          }
+        }
+      },
+      "previous_profiles": {
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
+          "source_sha256": "ad7ef99abb1c938e74115aa87fe5d3cf737e84aa915aab1fbf5de26939fea3a9",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_moon_patch_spawn_fix/box.acpatch",
+              "sha256": "20dcf2471b57b76eb346e18b1b1e432c2447af407ff5a71a7cf671f6a29b3fd1",
+              "body_sha256": "288c0cebc013a2813d33541a1ea2e71cf0de1134d29714af53e3e43c04a8d3ee"
+            }
+          }
+        },
+        "zone/Common/zombie_coast_patch.ff": {
+          "source_sha256": "e64b1ac66bf8f25c4e16b570f918a7c44a295ea6e3a43a5ad48489f4fdc0d52f",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_coast_patch/box.acpatch",
+              "sha256": "60acb0aee1c1cbab6c682ff91fad8c9f880d427baedf2e96f34b447bdd18b6fa",
+              "body_sha256": "f2993ef559e037d72f20631238b22f53b645d5fbd4da8343c53bd6195d1cc045"
+            },
+            "george": {
+              "path": "patches/goth/zombie_coast_patch/george.acpatch",
+              "sha256": "525f7d440fc1c168cfdfd49aab1102c123966aa7d82c3305d26108fe49520088",
+              "body_sha256": "dfe8841acfb2208c902351c668cf9cb32f251497420f266305f84be1ad58d62b"
+            },
+            "box+george": {
+              "path": "patches/goth/zombie_coast_patch/box+george.acpatch",
+              "sha256": "334e1275dc4e6cc4acf6884bcf96dc6beab6bf193cf59c6c0019cd70459ea6d5",
+              "body_sha256": "38dfabe6b2bf0303a3ab96cfe61ee2e1938ac582652f846504f177c44da02f5d"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_asylum_patch.ff": {
+          "source_sha256": "8d85b711e6db71ba17f8ac12625133db7a77466c32b5a1d6e43a840b1095f2cb",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_cod5_asylum_patch/box.acpatch",
+              "sha256": "f9b11d83a871d440044f68f4e32893c8d0d10a6861baf1cc3141d2543ef74aca",
+              "body_sha256": "bf76246c1f9b80aab05eea8c7af88b0449aca5c786e49718059ad26726e17248"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_cod5_asylum_patch/traps.acpatch",
+              "sha256": "360c291d607621efa45bb8a2a7e902b7836e527c3d7ea16e201f39927a9ebbe1",
+              "body_sha256": "11d899edfb9548d88b7890808d347ba9839c422319cc1b87cbd07f9c458808cc"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_cod5_asylum_patch/box+traps.acpatch",
+              "sha256": "d066e87dc154197ff13540188c42b6c2c29dc09d405dc437b682ac07eb7534ee",
+              "body_sha256": "08f41e3ec51764c61501f082d3d76cd66bb45d0f99e0463f43d73c87e44da2dc"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_factory_patch.ff": {
+          "source_sha256": "c417b9a01fac167a0b7d133e5f06f6b6fa368e141a0b8d17a9d15595c4b268f0",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_cod5_factory_patch/box.acpatch",
+              "sha256": "0167cc4d8797dba471f3d19daf56fba8336fe40ae7074619fcd8067f43613c87",
+              "body_sha256": "a586db32f2460091acc4ff30c145a22a674b5d6875fadca5ef2d963b5b3d4221"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_cod5_factory_patch/traps.acpatch",
+              "sha256": "3977c83704122f825217362f115c207856542d39601d4dbf9ae2bd468c9be709",
+              "body_sha256": "d6dabcd9b4453648b3d8142e2ba889e2cee851dcf7a867a1be997666c820a09e"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_cod5_factory_patch/box+traps.acpatch",
+              "sha256": "4e3b5b516cea237dbf1ac7c8ed6f9aa49c49b54ac8ec8edb7be993ee8dfb480e",
+              "body_sha256": "eec3ae2c58fb11a7b6fbf0215db7d9d15fdd24e684bc213d41a9a28890e4d564"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_prototype_patch.ff": {
+          "source_sha256": "b843ce941d5c47eea62f3038bfca5bd193f6a75e283d02ef490cec66afe78396",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_cod5_prototype_patch/box.acpatch",
+              "sha256": "4783eae7dfd70ffa2be6ea68df3d85e899b61e7b01ae6d0a07de97a1047423fa",
+              "body_sha256": "dc7785f2317834556b26dc735ddc1dde096871489141088eb71746b0d3e9e830"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_sumpf_patch.ff": {
+          "source_sha256": "febb474e29ea27773a709ee33180812b5668207784ff5ab734ea097bfda3030a",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_cod5_sumpf_patch/box.acpatch",
+              "sha256": "c26859ae66933dd696f42de9b413f75d1315163aeecafc074ad55b13e91791f8",
+              "body_sha256": "98806285c438a8d47ff9516d760ae0403d61d27fb39f81685a9e0c31590a00ad"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_cod5_sumpf_patch/traps.acpatch",
+              "sha256": "e429ce8c44870ccfadf89fb1f7689c2d4d6c8208e32b4f25df3673565fd748ae",
+              "body_sha256": "7dc99de554ec2079befb7bfe75e68bd8e6c6bc6a6ee94aa4306047491d62be2b"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_cod5_sumpf_patch/box+traps.acpatch",
+              "sha256": "f4f459a0f538961214cca138718db482d8f699c39d5b5d15ce1db74233d79916",
+              "body_sha256": "39eca61297c90625faf9f9bf1da995ea5f5d4cff41a972ab3dc0431db8f73b78"
+            }
+          }
+        },
+        "zone/Common/zombie_cosmodrome_patch.ff": {
+          "source_sha256": "cb2ff8c1ed6a46779c65105a3d8b5f54dee369afbd77e5cc73b919c0bda030df",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_cosmodrome_patch/box.acpatch",
+              "sha256": "e92f8941fda4ad54da0f64b3f60c822da4aa6bae7dc3a5bfd636c9e9ea52618d",
+              "body_sha256": "84713da5e590bcc390485b87a820601494458e52a3c8004ac42bd9fbf0446843"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_cosmodrome_patch/traps.acpatch",
+              "sha256": "89de8fa270844e28a4f9013113ee6f6b813e6b9f1dcbaafa3a5ccec56f6b65a2",
+              "body_sha256": "ee4c27171e5d83f5c6b5d4c360c34e3e2382ffac90cec60eaea7f6cd2df2596c"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_cosmodrome_patch/box+traps.acpatch",
+              "sha256": "635b61489351849fd79a1d497b9af2997bb8c8b0a779388e9e4bf9f392f7ac54",
+              "body_sha256": "f0781594d8d7d2c00d18089db2110393d4ad4b171b41dffa8d88676de9222a5c"
+            }
+          }
+        },
+        "zone/Common/zombie_moon_patch.ff": {
+          "source_sha256": "37e6c423679e49d2453973fa2f8012f09f3442f2d39ebfe62b74e4f88e27824c",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_moon_patch/box.acpatch",
+              "sha256": "a4637dd2fda7a3226367bd7906c3d1a9f83f1679db0800b16ea19dfae83f9b76",
+              "body_sha256": "6244897867f3dd08dddd5096a250462220a1e8b03f1b3fa945217404b6ce7de4"
+            }
+          }
+        },
+        "zone/Common/zombie_pentagon_patch.ff": {
+          "source_sha256": "e748ad14b01ed47f34ec273101eca8d6513f1494da9936c4d47d835ed1ef28de",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_pentagon_patch/box.acpatch",
+              "sha256": "5488345f7a42a310575e10b7092d14c5351ed5ef18d1249eeb4d6c7a9fe5c66b",
+              "body_sha256": "d76f96ea2da67ad54b87d3b363ccf7f200d82cc274e1522cf6d1ea5dab958cb6"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_pentagon_patch/traps.acpatch",
+              "sha256": "e1507cc612eeaadf0eb2d91443aee1f5d9f09c53d5b4bd67da104027a1c2a0bc",
+              "body_sha256": "30d0148370c24f68c0c91e20b9d91d0d9cb35c034a00c1363bdb16450929357f"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_pentagon_patch/box+traps.acpatch",
+              "sha256": "6ab9f783f341348bf7436549829aa44ca755a75e1e1681a593d3abd55a905864",
+              "body_sha256": "e929c7ec452506ed87f7faafd50731339989cc73edf5ea561680cb4d1cdfe991"
+            }
+          }
+        },
+        "zone/Common/zombie_temple_patch.ff": {
+          "source_sha256": "874dfa41c069da143f95e0a92cd8ff6c0aeca30d59943699bde529b089d8e0c4",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_temple_patch/box.acpatch",
+              "sha256": "bd3a049e815f1d91599f0151bc3e5bbc3a873feae4d4ac91354c27fea2a2e55b",
+              "body_sha256": "0639a8cfe670e503301c23ea975a1c04ec93df5ca3ddc7d1615f3669dc28a646"
+            }
+          }
+        },
+        "zone/Common/zombie_theater_patch.ff": {
+          "source_sha256": "b300ae9f880558050bc24235d68bc5409d68509204c30e446be6d0b4eb53be9f",
+          "profiles": {
+            "box": {
+              "path": "patches/goth/zombie_theater_patch/box.acpatch",
+              "sha256": "2cba8404da19925cb466baeb7a97aafd9d2335e614974e6216cd1e94572ed0f2",
+              "body_sha256": "d5e0c030b1f772b228b3213865b3cdae5805442df7ed627951c39650e51e608f"
+            },
+            "traps": {
+              "path": "patches/goth/zombie_theater_patch/traps.acpatch",
+              "sha256": "6fb0ba28c488db58a62c3b30d65278d4580ba874db0685e66748549e5955eeb1",
+              "body_sha256": "f0530b7c21c7f738cedc4d99c4a26a746e7cab7a6c42357b7d5af3298e644736"
+            },
+            "box+traps": {
+              "path": "patches/goth/zombie_theater_patch/box+traps.acpatch",
+              "sha256": "7af99136baa11969a123e3803a22ba8711dc7b634be35ce9202b8bde3b59517c",
+              "body_sha256": "4e5c9ef3e04bf78feb5601298c55d4e269af7ea11c082d10268b0b35d3014c3c"
+            }
           }
         }
       }
@@ -454,17 +818,17 @@
         }
       },
       "files": {
-        "zone/Common/zombie_cosmodrome_patch.ff": "2ff3cd4982197950cddf5e815c57e5c972579989dedc487c92efb844186e8901",
-        "zone/Common/zombie_coast_patch.ff": "7c7fc33c1cd0c86e455d914f08ea670fda9fe4d585e119dd5e55385b2b9da04b",
-        "zone/Common/zombie_pentagon_patch.ff": "bc256ea9e4580b0c988af8148c5f51ad4fe3897f68859046bcffa2e349785f9d",
-        "zone/Common/zombie_theater_patch.ff": "2e93743ce8c3917e811214e510e2f090d9d6c617b838c4a2bc7b12c8565aed70",
-        "zone/Common/zombie_moon_patch.ff": "1bc9ee4684337fa96113ad019208dd632df67827036aaf9e42adf466a7e1e53b",
-        "zone/Common/zombie_cod5_prototype_patch.ff": "88afef5592b125a5bdb4f72af87b19bea8ca1b8b14896d3ca2ed91f87f80976b",
-        "zone/Common/zombie_cod5_factory_patch.ff": "111b921632e47873ab9f7fec4f5db53cdaf8bf45dfee47797ceeefbd35ef4495",
-        "zone/Common/zombie_temple_patch.ff": "f6c002c475bb9b58e4e25fa3937aa5339065def42bceca80242afb1b6f8830f8",
-        "zone/Common/zombie_cod5_sumpf_patch.ff": "ccc3e47d7faa9df20721e8aa661f14c22200edc25737ab99eb87cbd66be89aa1",
-        "zone/Common/zombie_cod5_asylum_patch.ff": "dbdfe913aed4774390437a91431c432700ee36459e34366652131b19004b3b1e",
-        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "bc57e61c1d43c1cbe4d4b7f3cc2c3be7c7ac12c89d23f4ecd07b943d0a2f081f",
+        "zone/Common/zombie_cosmodrome_patch.ff": "540628838e00283aa91a7ce599360a374401ab06347d0c10e54683aa4cd18b50",
+        "zone/Common/zombie_coast_patch.ff": "a59345d69aa001ce5582c3881b5eb9b09f4ebd606616e3615f116e9fa993daf4",
+        "zone/Common/zombie_pentagon_patch.ff": "3481dd5b8115a57cf193ed4db1bb5159c1dd5e314368ea9792e76a4924809fba",
+        "zone/Common/zombie_theater_patch.ff": "8ff2239d8d8bdc823b2f573069dd818ca9e9e17a49d02e2ac0d39d60a877c1dc",
+        "zone/Common/zombie_moon_patch.ff": "ae3cfa0eb3ac889b4203154e58d5ff90f8613c9578504bca49f3712e49477ec7",
+        "zone/Common/zombie_cod5_prototype_patch.ff": "6726d75b30d39ff94782010a980f04ee19f872ad1708d5054dcc9f5df31b3204",
+        "zone/Common/zombie_cod5_factory_patch.ff": "b6dd23e78431aae37bcf146ddb2b0bd6f0403df5a0b1490832f1657b2e5cc616",
+        "zone/Common/zombie_temple_patch.ff": "55392bf9e91eab9cad9441a7f364065d10690ae171e71b0a23f93af096e7f39e",
+        "zone/Common/zombie_cod5_sumpf_patch.ff": "a429771f279778424f85d2d0e1dc503b2306748850c5e06ebedeebf20ca3017d",
+        "zone/Common/zombie_cod5_asylum_patch.ff": "c9eb35fad7e73effd0ce997c7fc983157e08d71171b44732b6dc035cadf8a37f",
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": "f515ac8d59e24b473d80b1156e6606b8c70c393ea818d0c5cc43effc778a195f",
         "main/iw_animatedcamos.iwd": "89a68ac7310046d1d1a90c70400d2cd3b5c3d03fcd5c753ea01f7a13eff57a3b",
         "zone/Common/mod.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
         "zone/Common/mp_animatedcamos.ff": "8b1708124d4f107d5d55c1010edd347e7a64b2a246d36bc15fc35265f3481b1c",
@@ -473,149 +837,331 @@
       "profiles": {
         "zone/Common/zombie_theater_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_theater_patch/box.acpatch",
-            "sha256": "d49a0c9ae791587c226b3cbe093f32b22bc93579e73de204b08529e942708432",
-            "body_sha256": "3fec40ec763ea66f3332b3ef5c9cd79c6f8d2301780344d66ea8ba312ca62b1a"
+            "path": "patches/revised/stock/zombie_theater_patch/box.acpatch",
+            "sha256": "2b953aa7ab3861a47c8d3cb31b629d9d68dcac9edd0adca76c8bcbbe6bec19fe",
+            "body_sha256": "2e69dc34ed37a8f4ced76f1c7b0166ed3193a2091d7a505ba2dfb68a5d318f61"
           },
           "traps": {
-            "path": "patches/stock/zombie_theater_patch/traps.acpatch",
-            "sha256": "b46c0f5f2c504cb0fee20dee1d8b20027809573f380e94e9b950e2e696b85f1a",
-            "body_sha256": "1a68fc6fc463139494b584d85052dbc0be20484467536ac9f1ae738042e10a28"
+            "path": "patches/revised/stock/zombie_theater_patch/traps.acpatch",
+            "sha256": "c5f1887d3beea82052cc286b0ea6a227e84f800ba2a29d176ef1a3c92f5d222f",
+            "body_sha256": "d6457cfba795395a913a5d3c11347f1d999f3e2147cf96cfd0088939f04abeca"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_theater_patch/box+traps.acpatch",
-            "sha256": "b61df3344306d8df3cd02ebf65a016842a0cdacb3c15b84b32a4d5e0afd9d0ef",
-            "body_sha256": "aceb2925b390209d663e00664f3bba201364cac5c46531df38f7bef945fc3af8"
+            "path": "patches/revised/stock/zombie_theater_patch/box+traps.acpatch",
+            "sha256": "e50916e4eb365421caefc2081bb2e6933184616389da7de2f2322aac83bb8fa8",
+            "body_sha256": "0d7dd8db195ca9d6a3159a74aac6b6ec0d016c21b14a87003a00dcfce9240825"
           }
         },
         "zone/Common/zombie_pentagon_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_pentagon_patch/box.acpatch",
-            "sha256": "c5da74b25fdd78b8e5ce5e71c00f920d052c27f38f14e613ead107131f789122",
-            "body_sha256": "fc8dc947b0ca75809352c33f4ef7adf3551bb8009c176b7939278d2ab67e654d"
+            "path": "patches/revised/stock/zombie_pentagon_patch/box.acpatch",
+            "sha256": "a6596dc84bb811bae5401f12436798aa78ff6c929bf096201dc084c943c73cf8",
+            "body_sha256": "e59efd6189a9c7f2c593af94cfb7aff3ab5f67a74aebdf28bfcce44cdc4b6d11"
           },
           "traps": {
-            "path": "patches/stock/zombie_pentagon_patch/traps.acpatch",
-            "sha256": "c12d194b1e40f5c1c60e52453a43af01130f2afbf30cdb30dfcd8909b27c61d3",
-            "body_sha256": "7165595c542febc425ad417a22fdab14b276cf10b71bb806e20423f3459c5e68"
+            "path": "patches/revised/stock/zombie_pentagon_patch/traps.acpatch",
+            "sha256": "f63e8b3fd9ae4eef265722791743517e5fecc2f9080d79a14bae7cda02bc5117",
+            "body_sha256": "499ed64f213b9f209ac7a7d197439f3bae54cf689417df4507172fc5a50e7f8b"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_pentagon_patch/box+traps.acpatch",
-            "sha256": "cfd2720265e4d21ab605e59dd7c822f3df683472fb616d78dad7be20b397042c",
-            "body_sha256": "150b1ce8d55f0cdeea5b89a1501f0d9d8dbc8aabaa132472abc0fabc9802ecb3"
+            "path": "patches/revised/stock/zombie_pentagon_patch/box+traps.acpatch",
+            "sha256": "1543cedc0f514249fab660bd8e15312e95be6304a809352d7af462bcb31d826e",
+            "body_sha256": "003ceaa9a6be07612df8e1cecff3cad384a304d550fb6e1c9c6fec3ac282ff4c"
           }
         },
         "zone/Common/zombie_cod5_prototype_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_cod5_prototype_patch/box.acpatch",
-            "sha256": "4dd7c495383f91e2c6bbe3b72c1c54c06f0c8e410e6f90194487c19fef4341c1",
-            "body_sha256": "4b1cafcd28045b58b99f29d2f7efe9f18f2922f9d3070a71c9f1c239fb0be42b"
+            "path": "patches/revised/stock/zombie_cod5_prototype_patch/box.acpatch",
+            "sha256": "11a5691ae7a495b209385bedaa86763fd7b7845963c27d1844ca60d716005b19",
+            "body_sha256": "2516683ad6c0632cfee8e66344f492ac6d32d813fd349403120ad71fef97b118"
           }
         },
         "zone/Common/zombie_coast_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_coast_patch/box.acpatch",
-            "sha256": "d4c54929a944bf3c383e8b8a296bfe3a0a83496ffba663af0724934709234862",
-            "body_sha256": "6707cf849d565ce47b8c32ba95b5c096b898983865889e90f9322f16a5cfa885"
+            "path": "patches/revised/stock/zombie_coast_patch/box.acpatch",
+            "sha256": "4e67eb06f65a0cde313c9148648fcdeef982166849dc9f1e9a44ba4cee8038f2",
+            "body_sha256": "4980f2ec4458ba36cc42ab1127ce152c37e4e08f4e88c728f61194a4d028fbde"
           },
           "george": {
-            "path": "patches/stock/zombie_coast_patch/george.acpatch",
-            "sha256": "ce92cba33f8c9e7e22245b7430e1a3cd6e79e6972491f0f318e4afb39d20be3e",
-            "body_sha256": "363c4e879cefe587f74679ea7da1cc4ea8b919f70f5d3f66ded959b68b092a29"
+            "path": "patches/revised/stock/zombie_coast_patch/george.acpatch",
+            "sha256": "c95b47cf4b549538a71f8f9fca58460a795cea5b5ecca35a98d142332f041d83",
+            "body_sha256": "0400b9bd2f75f4feec2c0ea875d8b388ddcf662642b3302e1124a2a1a61bf0cd"
           },
           "box+george": {
-            "path": "patches/stock/zombie_coast_patch/box+george.acpatch",
-            "sha256": "68f0d22b40b4f86ffadabd4f22118b9b625b782dac491d7ee866e2f2da560e13",
-            "body_sha256": "9c8ffe3629c409352c2f275e508118bf07acf101392d5a0e4cbbe12abadacea1"
+            "path": "patches/revised/stock/zombie_coast_patch/box+george.acpatch",
+            "sha256": "690d9d4f969c2fe1bd1fe34530e200c05ac77851e834486dd95f8c46c8845d06",
+            "body_sha256": "29c8afd3681f22d844e860027f58fa88d6fae35125b7e3a798fd9308a5dbff47"
           }
         },
         "zone/Common/zombie_temple_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_temple_patch/box.acpatch",
-            "sha256": "a8716edef0bba16763be500392f7aad852aa9ac75d81ebe1f212b01171b93066",
-            "body_sha256": "abe6db430dbe75550a613dae0d3fc73898547288b90910ecc81c1fad0d6c604c"
+            "path": "patches/revised/stock/zombie_temple_patch/box.acpatch",
+            "sha256": "0e0a1ed1bd941a5da73dd85c0eba005fef80d6e223555e3a91b47ed3243d0c4f",
+            "body_sha256": "a7666f72966337f888f59a3ff1a3cd61d477ee7026625c9aeda8215700eee626"
           }
         },
         "zone/Common/zombie_cosmodrome_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_cosmodrome_patch/box.acpatch",
-            "sha256": "2b74f03f8563dab2bfdaa9d64976270628379bc6249b817c6f94211cb64c4970",
-            "body_sha256": "bda874e289e09e5059180bd25ca2c7235ae6cad5aa81833a81c2a0ebe8f1dc66"
+            "path": "patches/revised/stock/zombie_cosmodrome_patch/box.acpatch",
+            "sha256": "12c8200988872a0cd3dc5a1b74ca58e39b423cddd631e3f953f6e6635feb580c",
+            "body_sha256": "e8df0b64e3cf020703ff66d80c97e7bae58b0d9e6f3ae444c10f9bf9d449db53"
           },
           "traps": {
-            "path": "patches/stock/zombie_cosmodrome_patch/traps.acpatch",
-            "sha256": "381d86da0b599e4d2cc661f91a538ecc3a27e52325b4a15d6a6d319edb10a018",
-            "body_sha256": "684cc8f21dae6a02dcfe7d1362f493e37a3166b1cac12624cd813126c119e37b"
+            "path": "patches/revised/stock/zombie_cosmodrome_patch/traps.acpatch",
+            "sha256": "3cd9a8fc3c5564db9eff9127b09d2f247e3a6d55000ee935b3b04d790c54fc26",
+            "body_sha256": "e17f75bc6c549f132787fc3800b10149f5913b5a7d2e2a013dd416cd778bb362"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_cosmodrome_patch/box+traps.acpatch",
-            "sha256": "7ad960ed61707c64e5c39c8af7db8d57317be38e123f07a214399edde6b72a5d",
-            "body_sha256": "188e1ee25a793479645e56158e0451cbc0018fe3568108c768c57d2dd4843029"
+            "path": "patches/revised/stock/zombie_cosmodrome_patch/box+traps.acpatch",
+            "sha256": "2bc2bbf58a647d0ceb25358b59973173b9f41a5ed80dd0955f468dc0379ba357",
+            "body_sha256": "b600ba1d893f56083dad9397f92562c4b9e51bc99b3cabc81be301ef332f1882"
           }
         },
         "zone/Common/zombie_cod5_factory_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_cod5_factory_patch/box.acpatch",
-            "sha256": "3df8991629e8bc3151a0b60021c3df6166bf6f6f79ae1aea948c49fd3fb69efa",
-            "body_sha256": "549f83714c96874f77bdf145f825e4522d6eda1371ea90a1177090a76819bfd8"
+            "path": "patches/revised/stock/zombie_cod5_factory_patch/box.acpatch",
+            "sha256": "774be9a5c16bbe864946ae1739387af5e4d5a3ccbd696c697cdf3d7fb01332c9",
+            "body_sha256": "d0f3b95e2816c778d4d5be5f770d5a91661f367c238eb71c050333cbdb4b3ce0"
           },
           "traps": {
-            "path": "patches/stock/zombie_cod5_factory_patch/traps.acpatch",
-            "sha256": "2b10c1f299e93bd2a31f85a28a8334493cc00a3a4c779a4cb6fcc8281832c7ce",
-            "body_sha256": "dd65dd509ea96f570891da27f26fa9d0bc01a2766c06fd160940ee7ec25a7390"
+            "path": "patches/revised/stock/zombie_cod5_factory_patch/traps.acpatch",
+            "sha256": "ad352bd94e08cac7ab6db63051cda1018ebbab15f1214d8dae2863b8b5cfe11a",
+            "body_sha256": "e8c366469a166f303743cad2ca483aeb9598bf42df5cbee256177db7a8bf96b4"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_cod5_factory_patch/box+traps.acpatch",
-            "sha256": "7fbced0b36023fd0030bed93beca3da8230f875fb7159de21d3fc5ac6c574fe2",
-            "body_sha256": "e32f5b8efb83e0d1085d088d50bd1de7ff08695d14088addc7435defad1440fc"
+            "path": "patches/revised/stock/zombie_cod5_factory_patch/box+traps.acpatch",
+            "sha256": "6e72b03c07e6da3d510cdfc8eb39212cc7f6be0ce5a1b8a84afe2877d558f1b9",
+            "body_sha256": "5635067025450ba7fd5eb893c38730275071433017c5079f56450724c506724e"
           }
         },
         "zone/Common/zombie_cod5_sumpf_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_cod5_sumpf_patch/box.acpatch",
-            "sha256": "ee6f963759fdb662e749126ab8eca49f00d1c3861571d43918159cd28419a396",
-            "body_sha256": "011eebadb7a0b61f01d8cb3163e373e2c9d2dd911810d0d4fa39d43508e1ad33"
+            "path": "patches/revised/stock/zombie_cod5_sumpf_patch/box.acpatch",
+            "sha256": "c94dc805d0578e4841b052c6364f018e6bdd6f71bf604d62ae287155320d957c",
+            "body_sha256": "88c2e55e03cc17143bce0840968ae4ab0db5d19ef88ce96ce5f6a3a112dd1c7f"
           },
           "traps": {
-            "path": "patches/stock/zombie_cod5_sumpf_patch/traps.acpatch",
-            "sha256": "8429740ca20e1be4ca435dfb96df29a5b4075c870aaa472108ad757add9b71cf",
-            "body_sha256": "314806b4c98fcd017dc59904bb1cd2273c15b5ea9a246756487709cfe0871301"
+            "path": "patches/revised/stock/zombie_cod5_sumpf_patch/traps.acpatch",
+            "sha256": "84ac5515fa5769404382b8cfa99cf326062fb3b2222abe0eb3b16a343f364f50",
+            "body_sha256": "c2ed1e193d287582c550cc1016bf11dee062c3434b4937110bbf066d2ec7b88d"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_cod5_sumpf_patch/box+traps.acpatch",
-            "sha256": "37fa89ffbb21a82592d75c2046de8509d379a46fc04881fb65dc35fa4c3bad12",
-            "body_sha256": "39328606a94d54981bf74f14a4f4bac05cae78aed9a7c450eb525ebf8b6ae97c"
+            "path": "patches/revised/stock/zombie_cod5_sumpf_patch/box+traps.acpatch",
+            "sha256": "a94e66b3dab7bdb9dae024f16475fd98e291617811e5acdd17020716f5add8a4",
+            "body_sha256": "394907906d84cfa58657b25ebf8403b76e6a399888d79d26af7cdd7e1277f8a2"
           }
         },
         "zone/Common/zombie_cod5_asylum_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_cod5_asylum_patch/box.acpatch",
-            "sha256": "dd367fb09c9fe5237b2550a489f7e1ea1638507f98c9b13f7bd5d742178d233d",
-            "body_sha256": "afae1fae26207b083b8bc36a7032eb6c7ab34bd60f15b7927fd80635fc6ba883"
+            "path": "patches/revised/stock/zombie_cod5_asylum_patch/box.acpatch",
+            "sha256": "390dc9947332bcf7c91c96adf42919a991c69d54d0577c08db83aa9a99bc5d39",
+            "body_sha256": "4cda6929c090f204e4a9b39ba2cd32693531fa8c185a9c7f6b17690951252dac"
           },
           "traps": {
-            "path": "patches/stock/zombie_cod5_asylum_patch/traps.acpatch",
-            "sha256": "4c9add4318e5feaebc0f7e23ff4e9dc5ba5035ab00dc2cf7e692179a27a70306",
-            "body_sha256": "cd0320159dad0a1817e2f09d44f571bf8e09990f59b382bc657fd693ba746d91"
+            "path": "patches/revised/stock/zombie_cod5_asylum_patch/traps.acpatch",
+            "sha256": "052a0e861e5a313dac45e6d474d0723693676f17be293ee825c7a33610245d50",
+            "body_sha256": "7c7fbdd365d4fda168b520f1837f764239a36afbe59d27205f6490b08d1a42bc"
           },
           "box+traps": {
-            "path": "patches/stock/zombie_cod5_asylum_patch/box+traps.acpatch",
-            "sha256": "0e521422923f1fd0f6782b7883afb6dc8d7b7652d64bf0d9472a6e314126a0e1",
-            "body_sha256": "961bd4727bde634480e729ea74180bbc67e7b52edeefc2a284c1ad69957ad52d"
+            "path": "patches/revised/stock/zombie_cod5_asylum_patch/box+traps.acpatch",
+            "sha256": "d4996e944c70615679caba867dc938f834afaa8bc11b486913c7f3b5461e9a8f",
+            "body_sha256": "be82a45772af23deadbcbb330c814f8d382efca2236f260605a54ca2458ece52"
           }
         },
         "zone/Common/zombie_moon_patch.ff": {
           "box": {
-            "path": "patches/stock/zombie_moon_patch/box.acpatch",
-            "sha256": "7355fc53ff2dd2c6b4cc19801b07e98ff6704dbe4821d74a2daa95e2501d01cd",
-            "body_sha256": "25b157462d7355b08d813a0e5f8559f84b3b7c1bc52f73acc555db459bee9065"
+            "path": "patches/revised/stock/zombie_moon_patch/box.acpatch",
+            "sha256": "be4b2f3692b216b8f49810b23df0e97edead1b51f14524e1f6ed03df15f275a1",
+            "body_sha256": "b7112cdf761eb700685a92f62ae49b2655277e223c6d3576e7c233fb39d9722a"
           }
         },
         "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
           "box": {
-            "path": "patches/stock/zombie_moon_patch_spawn_fix/box.acpatch",
-            "sha256": "b816c9c20f247195403321546c99046fcada227eb4ac2b48c8a395eab0ebda1c",
-            "body_sha256": "3154fa16f6626db8286836dac9140e85b9f583276abd3767463e524e5b2a7e94"
+            "path": "patches/revised/stock/zombie_moon_patch_spawn_fix/box.acpatch",
+            "sha256": "8091835232e877f9dbbae6f951b83376a88b43719c594301982b99c1e1ccebba",
+            "body_sha256": "de9a50309acaaa5fedf94ccbdfa1a4641b022b5b51f1a2b9633994f19078c9cd"
+          }
+        }
+      },
+      "previous_profiles": {
+        "optional/Moon-spawn-fix/zombie_moon_patch_spawn_fix.ff": {
+          "source_sha256": "bc57e61c1d43c1cbe4d4b7f3cc2c3be7c7ac12c89d23f4ecd07b943d0a2f081f",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_moon_patch_spawn_fix/box.acpatch",
+              "sha256": "b816c9c20f247195403321546c99046fcada227eb4ac2b48c8a395eab0ebda1c",
+              "body_sha256": "3154fa16f6626db8286836dac9140e85b9f583276abd3767463e524e5b2a7e94"
+            }
+          }
+        },
+        "zone/Common/zombie_coast_patch.ff": {
+          "source_sha256": "7c7fc33c1cd0c86e455d914f08ea670fda9fe4d585e119dd5e55385b2b9da04b",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_coast_patch/box.acpatch",
+              "sha256": "d4c54929a944bf3c383e8b8a296bfe3a0a83496ffba663af0724934709234862",
+              "body_sha256": "6707cf849d565ce47b8c32ba95b5c096b898983865889e90f9322f16a5cfa885"
+            },
+            "george": {
+              "path": "patches/stock/zombie_coast_patch/george.acpatch",
+              "sha256": "ce92cba33f8c9e7e22245b7430e1a3cd6e79e6972491f0f318e4afb39d20be3e",
+              "body_sha256": "363c4e879cefe587f74679ea7da1cc4ea8b919f70f5d3f66ded959b68b092a29"
+            },
+            "box+george": {
+              "path": "patches/stock/zombie_coast_patch/box+george.acpatch",
+              "sha256": "68f0d22b40b4f86ffadabd4f22118b9b625b782dac491d7ee866e2f2da560e13",
+              "body_sha256": "9c8ffe3629c409352c2f275e508118bf07acf101392d5a0e4cbbe12abadacea1"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_asylum_patch.ff": {
+          "source_sha256": "dbdfe913aed4774390437a91431c432700ee36459e34366652131b19004b3b1e",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_cod5_asylum_patch/box.acpatch",
+              "sha256": "dd367fb09c9fe5237b2550a489f7e1ea1638507f98c9b13f7bd5d742178d233d",
+              "body_sha256": "afae1fae26207b083b8bc36a7032eb6c7ab34bd60f15b7927fd80635fc6ba883"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_cod5_asylum_patch/traps.acpatch",
+              "sha256": "4c9add4318e5feaebc0f7e23ff4e9dc5ba5035ab00dc2cf7e692179a27a70306",
+              "body_sha256": "cd0320159dad0a1817e2f09d44f571bf8e09990f59b382bc657fd693ba746d91"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_cod5_asylum_patch/box+traps.acpatch",
+              "sha256": "0e521422923f1fd0f6782b7883afb6dc8d7b7652d64bf0d9472a6e314126a0e1",
+              "body_sha256": "961bd4727bde634480e729ea74180bbc67e7b52edeefc2a284c1ad69957ad52d"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_factory_patch.ff": {
+          "source_sha256": "111b921632e47873ab9f7fec4f5db53cdaf8bf45dfee47797ceeefbd35ef4495",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_cod5_factory_patch/box.acpatch",
+              "sha256": "3df8991629e8bc3151a0b60021c3df6166bf6f6f79ae1aea948c49fd3fb69efa",
+              "body_sha256": "549f83714c96874f77bdf145f825e4522d6eda1371ea90a1177090a76819bfd8"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_cod5_factory_patch/traps.acpatch",
+              "sha256": "2b10c1f299e93bd2a31f85a28a8334493cc00a3a4c779a4cb6fcc8281832c7ce",
+              "body_sha256": "dd65dd509ea96f570891da27f26fa9d0bc01a2766c06fd160940ee7ec25a7390"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_cod5_factory_patch/box+traps.acpatch",
+              "sha256": "7fbced0b36023fd0030bed93beca3da8230f875fb7159de21d3fc5ac6c574fe2",
+              "body_sha256": "e32f5b8efb83e0d1085d088d50bd1de7ff08695d14088addc7435defad1440fc"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_prototype_patch.ff": {
+          "source_sha256": "88afef5592b125a5bdb4f72af87b19bea8ca1b8b14896d3ca2ed91f87f80976b",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_cod5_prototype_patch/box.acpatch",
+              "sha256": "4dd7c495383f91e2c6bbe3b72c1c54c06f0c8e410e6f90194487c19fef4341c1",
+              "body_sha256": "4b1cafcd28045b58b99f29d2f7efe9f18f2922f9d3070a71c9f1c239fb0be42b"
+            }
+          }
+        },
+        "zone/Common/zombie_cod5_sumpf_patch.ff": {
+          "source_sha256": "ccc3e47d7faa9df20721e8aa661f14c22200edc25737ab99eb87cbd66be89aa1",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_cod5_sumpf_patch/box.acpatch",
+              "sha256": "ee6f963759fdb662e749126ab8eca49f00d1c3861571d43918159cd28419a396",
+              "body_sha256": "011eebadb7a0b61f01d8cb3163e373e2c9d2dd911810d0d4fa39d43508e1ad33"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_cod5_sumpf_patch/traps.acpatch",
+              "sha256": "8429740ca20e1be4ca435dfb96df29a5b4075c870aaa472108ad757add9b71cf",
+              "body_sha256": "314806b4c98fcd017dc59904bb1cd2273c15b5ea9a246756487709cfe0871301"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_cod5_sumpf_patch/box+traps.acpatch",
+              "sha256": "37fa89ffbb21a82592d75c2046de8509d379a46fc04881fb65dc35fa4c3bad12",
+              "body_sha256": "39328606a94d54981bf74f14a4f4bac05cae78aed9a7c450eb525ebf8b6ae97c"
+            }
+          }
+        },
+        "zone/Common/zombie_cosmodrome_patch.ff": {
+          "source_sha256": "2ff3cd4982197950cddf5e815c57e5c972579989dedc487c92efb844186e8901",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_cosmodrome_patch/box.acpatch",
+              "sha256": "2b74f03f8563dab2bfdaa9d64976270628379bc6249b817c6f94211cb64c4970",
+              "body_sha256": "bda874e289e09e5059180bd25ca2c7235ae6cad5aa81833a81c2a0ebe8f1dc66"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_cosmodrome_patch/traps.acpatch",
+              "sha256": "381d86da0b599e4d2cc661f91a538ecc3a27e52325b4a15d6a6d319edb10a018",
+              "body_sha256": "684cc8f21dae6a02dcfe7d1362f493e37a3166b1cac12624cd813126c119e37b"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_cosmodrome_patch/box+traps.acpatch",
+              "sha256": "7ad960ed61707c64e5c39c8af7db8d57317be38e123f07a214399edde6b72a5d",
+              "body_sha256": "188e1ee25a793479645e56158e0451cbc0018fe3568108c768c57d2dd4843029"
+            }
+          }
+        },
+        "zone/Common/zombie_moon_patch.ff": {
+          "source_sha256": "1bc9ee4684337fa96113ad019208dd632df67827036aaf9e42adf466a7e1e53b",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_moon_patch/box.acpatch",
+              "sha256": "7355fc53ff2dd2c6b4cc19801b07e98ff6704dbe4821d74a2daa95e2501d01cd",
+              "body_sha256": "25b157462d7355b08d813a0e5f8559f84b3b7c1bc52f73acc555db459bee9065"
+            }
+          }
+        },
+        "zone/Common/zombie_pentagon_patch.ff": {
+          "source_sha256": "bc256ea9e4580b0c988af8148c5f51ad4fe3897f68859046bcffa2e349785f9d",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_pentagon_patch/box.acpatch",
+              "sha256": "c5da74b25fdd78b8e5ce5e71c00f920d052c27f38f14e613ead107131f789122",
+              "body_sha256": "fc8dc947b0ca75809352c33f4ef7adf3551bb8009c176b7939278d2ab67e654d"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_pentagon_patch/traps.acpatch",
+              "sha256": "c12d194b1e40f5c1c60e52453a43af01130f2afbf30cdb30dfcd8909b27c61d3",
+              "body_sha256": "7165595c542febc425ad417a22fdab14b276cf10b71bb806e20423f3459c5e68"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_pentagon_patch/box+traps.acpatch",
+              "sha256": "cfd2720265e4d21ab605e59dd7c822f3df683472fb616d78dad7be20b397042c",
+              "body_sha256": "150b1ce8d55f0cdeea5b89a1501f0d9d8dbc8aabaa132472abc0fabc9802ecb3"
+            }
+          }
+        },
+        "zone/Common/zombie_temple_patch.ff": {
+          "source_sha256": "f6c002c475bb9b58e4e25fa3937aa5339065def42bceca80242afb1b6f8830f8",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_temple_patch/box.acpatch",
+              "sha256": "a8716edef0bba16763be500392f7aad852aa9ac75d81ebe1f212b01171b93066",
+              "body_sha256": "abe6db430dbe75550a613dae0d3fc73898547288b90910ecc81c1fad0d6c604c"
+            }
+          }
+        },
+        "zone/Common/zombie_theater_patch.ff": {
+          "source_sha256": "2e93743ce8c3917e811214e510e2f090d9d6c617b838c4a2bc7b12c8565aed70",
+          "profiles": {
+            "box": {
+              "path": "patches/stock/zombie_theater_patch/box.acpatch",
+              "sha256": "d49a0c9ae791587c226b3cbe093f32b22bc93579e73de204b08529e942708432",
+              "body_sha256": "3fec40ec763ea66f3332b3ef5c9cd79c6f8d2301780344d66ea8ba312ca62b1a"
+            },
+            "traps": {
+              "path": "patches/stock/zombie_theater_patch/traps.acpatch",
+              "sha256": "b46c0f5f2c504cb0fee20dee1d8b20027809573f380e94e9b950e2e696b85f1a",
+              "body_sha256": "1a68fc6fc463139494b584d85052dbc0be20484467536ac9f1ae738042e10a28"
+            },
+            "box+traps": {
+              "path": "patches/stock/zombie_theater_patch/box+traps.acpatch",
+              "sha256": "b61df3344306d8df3cd02ebf65a016842a0cdacb3c15b84b32a4d5e0afd9d0ef",
+              "body_sha256": "aceb2925b390209d663e00664f3bba201364cac5c46531df38f7bef945fc3af8"
+            }
           }
         }
       }
